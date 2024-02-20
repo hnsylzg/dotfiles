@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory","custom/playerctl"],
 	"modules-center": ["hyprland/window","hyprland/submap","hyprland/workspaces","tray"],
-	"modules-right": ["custom/clipboard","pulseaudio","disk","bluetooth","network","temperature","clock"],
+	"modules-right": ["custom/clipboard","pulseaudio","disk","bluetooth","network","temperature","backlight","battery","clock"],
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
@@ -48,7 +48,27 @@
 	"format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
-	"tray":{
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+	"interval": 30,
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15 
+        },
+        "format": "{capacity}% {icon} ",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon} ",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "tray":{
 		"icon-size": 18,
 		"spacing": 10
 	},

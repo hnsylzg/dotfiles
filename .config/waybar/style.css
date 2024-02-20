@@ -1,3 +1,13 @@
+@keyframes blink-critical {
+    50% {
+        color: grey;
+    }
+
+    to {
+        color: @error_color;
+    }
+}
+
 * {
 	border: none;
 	border-radius: 10;
@@ -13,6 +23,7 @@ window#waybar {
 window#waybar.hidden {
 	opacity: 0.2;
 }
+
 #workspaces button {
 	background: #252733;
 	padding: 0 5px;
@@ -24,18 +35,22 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 }
+
 #workspaces button.focused {
 	color: #ebaaaa;
 }
+
 #workspaces button:hover {
 	box-shadow: inherit;
 	text-shadow: inherit;
 }
+
 #workspaces button:hover {
 	background: #fdbdbd;
 	border: #e69e9e;
 	padding: 0 5px;
 }
+
 #window {
 	margin-top: 6px;
 	padding-left: 10px;
@@ -45,6 +60,7 @@ window#waybar.hidden {
         color: #7dda9f;
 	background: rgba(0,0,0,0 ); /*#252733; */
 }
+
 #tags {
 	margin-top: 6px;
 	margin-left: 12px;
@@ -72,8 +88,8 @@ window#waybar.hidden {
 
 #tags button.focused {
 	color: #ABE9B3;
-    border-top: 2px solid #ABE9B3;
-    border-bottom: 2px solid #ABE9B3;
+        border-top: 2px solid #ABE9B3;
+        border-bottom: 2px solid #ABE9B3;
 }
 
 #tags button:hover {
@@ -81,8 +97,8 @@ window#waybar.hidden {
 	box-shadow: inherit;
 	text-shadow: inherit;
 	color: #FAE3B0;
-    border-color: #E8A2AF;
-    color: #E8A2AF;
+        border-color: #E8A2AF;
+        color: #E8A2AF;
 }
 
 #tags button.focused:hover {
@@ -100,6 +116,7 @@ window#waybar.hidden {
 	color: #cd79c1;
 	background: #252733;
 }
+
 #bluetooth {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -111,6 +128,7 @@ window#waybar.hidden {
 	color: #7dda9f;
 	background-color: #252733;
 }
+
 #temperature {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -122,6 +140,7 @@ window#waybar.hidden {
 	color: #7dda9f;
 	background-color: #252733;
 }
+
 #pulseaudio {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -134,20 +153,37 @@ window#waybar.hidden {
 	background: #2d2d3a;
 }
 
-#battery.charging, #battery.plugged {
-	color: #161320;
-    background-color: #B5E8E0;
+#battery {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #7dda9f;
+        background: #2d2d3a;
+	animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate
 }
 
-#battery.critical:not(.charging) {
-    background-color: #B5E8E0;
-    color: #161320;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+#battery.charging,#battery.plugged {
+	color: #7dda9f;
 }
+
+#battery.warning {
+        color: @warning_color;
+}
+
+#battery.critical {
+        color: @error_color;
+}
+
+#battery.critical.discharging {
+        animation-name: blink-critical;
+        animation-duration: 3s;
+	}
 
 @keyframes blink {
     to {
@@ -164,9 +200,10 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #F8BD96;
+	color: #F8BD96;
+	background: #2a3139;
 }
+
 #tray {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -191,6 +228,7 @@ window#waybar.hidden {
 	color: #7dda9f;
 	background-color: #252733;
 }
+
 #cpu {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -247,8 +285,8 @@ window#waybar.hidden {
 	padding-right: 5px;
 	border-radius: 10px;
 	transition: none;
-    color: #e17f69;
-    background: #312e2e;
+        color: #e17f69;
+        background: #312e2e;
 }
 
 #custom-power {
