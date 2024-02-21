@@ -1,8 +1,8 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","custom/playerctl"],
+	"modules-left": ["custom/launcher","cpu","memory","disk","custom/playerctl"],
 	"modules-center": ["hyprland/window","hyprland/submap","hyprland/workspaces","tray"],
-	"modules-right": ["custom/clipboard","pulseaudio","disk","bluetooth","network","temperature","backlight","battery","clock"],
+	"modules-right": ["custom/clipboard","pulseaudio","bluetooth","network","temperature","backlight","battery","clock"],
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
