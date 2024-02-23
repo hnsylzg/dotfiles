@@ -1,29 +1,29 @@
 {
-	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","disk","custom/playerctl"],
-	"modules-center": ["hyprland/window","hyprland/submap","hyprland/workspaces","tray"],
-	"modules-right": ["custom/clipboard","pulseaudio","bluetooth","network","temperature","backlight","battery","clock"],
+    "layer": "top",
+    "modules-left": ["custom/launcher","cpu","memory","disk","custom/playerctl"],
+    "modules-center": ["hyprland/window","hyprland/submap","hyprland/workspaces","tray"],
+    "modules-right": ["custom/clipboard","pulseaudio","bluetooth","network","temperature","backlight","battery","clock"],
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "format-icons": {
-          "1": " ",
-          "2": " ",
-          "3": " ",
-          "4": " ",
-          "5": " ",
-          "urgent": " ",
-          "active": " ",
-          "default": " "
-        },
-        "sort-by-number": true
-      },      
-      "network": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " ",
+        "urgent": " ",
+        "active": " ",
+        "default": " "
+    },
+    "sort-by-number": true
+    },      
+    "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
 	"format-ethernet": "{ipaddr} 󰈀",
 	"tooltip-format": "{ifname} via {gwaddr} 󰈀",
-	"format-linked": "{ifname} (No IP) 󰈀",
+        "format-linked": "{ifname} (No IP) 󰈀",
 	"format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
@@ -39,7 +39,7 @@
 	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
 	"on-click": "$TERMINAL bluetuith",
 	"on-click-right": "rfkill toggle bluetooth"
-},
+    },
     "temperature": {
 	// "thermal-zone": 2,
 	// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -145,4 +145,3 @@
 	"on-click-right": "killall rofi"
     }
 }
-
