@@ -73,9 +73,9 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": "{:󱦺 %I:%M %p  %Y/%m/%d}",
+        "format": "{: %I:%M %p  %Y/%m/%d}",
  	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-	"format-alt": "{:󱦺 %I:%M %p}"
+	"format-alt": "{: %I:%M %p}"
     },
     "cpu": {
         "format": "{usage}% 󰍛",
@@ -136,7 +136,7 @@
     },
     "disk": {
 	"interval": 30,
-	"format": "󰋊 / {percentage_free}%",
+	"format": "󰋊 {percentage_free}%",
 	"path": "/"
     },
     "custom/launcher":{
