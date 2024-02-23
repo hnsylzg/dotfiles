@@ -249,7 +249,7 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: rgb(228, 189, 134);
+	color: #e4bd86;
 	background: #2a3139;
 }
 
@@ -261,7 +261,7 @@ window#waybar.hidden {
 	padding-right: 12px;
 	border-radius: 10px;
 	transition: none;
-	color: rgb(228, 189, 134);
+	color: #e4bd86;
 	background: #2a3139;
 }
 
