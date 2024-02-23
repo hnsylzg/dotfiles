@@ -11,7 +11,7 @@
 * {
 	border: none;
 	border-radius: 10;
-        font-family: Microsoft YaHei Hack;
+        font-family: monospace, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	min-height: 10px;
 }
