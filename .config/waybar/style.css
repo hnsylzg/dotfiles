@@ -26,7 +26,7 @@ window#waybar.hidden {
 
 #workspaces button {
 	background: #252733;
-	padding: 0 5px;
+/*	padding: 0 5px;*/
 	color: #c2caea;
 	margin-top: 6px;
 	margin-left: 0px;
@@ -102,7 +102,7 @@ window#waybar.hidden {
 }
 
 #tags button.focused:hover {
-    color: #E8A2AF;
+        color: #E8A2AF;
 }
 
 #network {
@@ -214,7 +214,7 @@ window#waybar.hidden {
 	transition: none;
 	color: #aea4d0;
 	background: #45495c;
-	/*background: #1A1826;*/
+/*      background: #1A1826;*/
 }
 
 #memory {
@@ -282,7 +282,7 @@ window#waybar.hidden {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 15px;
 	border-radius: 10px;
 	transition: none;
         color: #e17f69;
