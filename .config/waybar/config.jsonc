@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory","disk","custom/playerctl","custom/playerlabel"],
 	"modules-center": ["hyprland/window","hyprland/submap","hyprland/workspaces","tray"],
-	"modules-right": ["custom/clipboard","pulseaudio","bluetooth","network","temperature","backlight","battery","clock"],
+	"modules-right": ["custom/clipboard","temperature","pulseaudio","bluetooth","network","backlight","battery","clock"],
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"on-click": "activate",
