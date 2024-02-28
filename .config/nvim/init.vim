@@ -18,7 +18,9 @@ Plug 'mhinz/vim-startify'
 "markdown 预览插件
 Plug 'iamcco/markdown-preview.nvim'
 "vim-snazzy 主题
-Plug 'connorholyday/vim-snazzy'
+"Plug 'connorholyday/vim-snazzy'
+"catppuccin
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 call plug#end()
 
 "配置 vim-airline 标签栏插件
@@ -34,11 +36,20 @@ nnoremap <silent> <M-o> : RnvimrToggle <CR>
 nnoremap <M-=> : bp <CR>
 nnoremap <M--> : bn <CR>
 
-"配置 vim-snazzy 主题插件
-let g:SnazzyTransparent = 1
-colorscheme snazzy
+"clorscheme catppuccin
 
 "指定浏览器路径
 let g:mkdp_patch_to_chrome = "/usr/bin/google-chrome-stable"
 "指定预览主题，默认Github
 let g:mkdp_markdown_css=''
+
+"配置 vim-snazzy 主题插件
+"let g:SnazzyTransparent = 1
+lua <<EOF
+require("catppuccin").setup {
+	transparent_background = true,
+	}
+vim.cmd.colorscheme "catppuccin"
+EOF
+
+
