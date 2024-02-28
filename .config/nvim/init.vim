@@ -43,6 +43,8 @@ let g:mkdp_markdown_css=''
 
 "配置 vim-snazzy 主题插件
 "let g:SnazzyTransparent = 1
+"colorscheme snazzy
+
 lua <<EOF
 require("catppuccin").setup {
 	transparent_background = true,
