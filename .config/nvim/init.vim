@@ -36,8 +36,6 @@ nnoremap <silent> <M-o> : RnvimrToggle <CR>
 nnoremap <M-=> : bp <CR>
 nnoremap <M--> : bn <CR>
 
-"clorscheme catppuccin
-
 "指定浏览器路径
 let g:mkdp_patch_to_chrome = "/usr/bin/google-chrome-stable"
 "指定预览主题，默认Github
