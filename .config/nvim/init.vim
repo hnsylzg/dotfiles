@@ -21,6 +21,7 @@ Plug 'iamcco/markdown-preview.nvim'
 "Plug 'connorholyday/vim-snazzy'
 "catppuccin
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+"Plug 'folke/tokyonight.nvim'
 call plug#end()
 
 "配置 vim-airline 标签栏插件
@@ -46,10 +47,12 @@ let g:mkdp_markdown_css=''
 "colorscheme snazzy
 
 lua <<EOF
+--require("tokyonight").setup {
 require("catppuccin").setup {
+	--transparent = true,
 	transparent_background = true,
 	}
+--vim.cmd.colorscheme "tokyonight"
 vim.cmd.colorscheme "catppuccin"
 EOF
-
 
