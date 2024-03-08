@@ -46,7 +46,8 @@
 		"critical-threshold": 80,
 		// "format-critical": "{tem:qperatureC}°C {icon}",
 		"format": "{temperatureC}°C {icon}",
-		"format-icons": ["", "", ""]
+		"format-icons": ["", "", ""],
+		"on-click": "$TERMINAL htop"
 	},
 	"backlight": {
 		// "device": "acpi_video1",
