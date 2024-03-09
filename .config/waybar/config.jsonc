@@ -17,7 +17,7 @@
 			"default": " "
 		},
 		"sort-by-number": true
-	},      
+	},
 	"network": {
 		// "interface": "wlp2*", // (Optional) To force the use of this interface
 		"format-wifi": "{essid} ({signalStrength}%) ",
@@ -39,7 +39,7 @@
 		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
 		"on-click": "$TERMINAL bluetuith",
 		"on-click-right": "rfkill toggle bluetooth"
-    	},
+	},
 	"temperature": {
 		// "thermal-zone": 2,
 		// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -115,7 +115,7 @@
 			// "Playing": "󰏥",
 			"Paused": "󰐍"
 			// "Paused": "󰐌"
-    		},
+		},
 		"exec": "playerctl metadata --format '{\"alt\": \"{{status}}\", \"tooltip\": \"{{playerName}}:  {{markup_escape(title)}} - {{markup_escape(artist)}}\" }'",
 		"on-click": "playerctl play-pause",
 		"on-click-middle": "playerctl previous",
@@ -145,7 +145,7 @@
 		"exec": "printf '{\"tooltip\":\"%s\"}' $(cliphist list | wc -l)' item(s) in the clipboard\r(Mid click to clear)'",
 		"exec-if": "[ -x \"$(command -v cliphist)\" ] && [ $(cliphist list | wc -l) -gt 0 ]",
 		"signal": 9
-    	},
+	},
 	"memory": {
 		"interval": 30,
 		"format": "{used:0.1f}G/{total:0.1f}G ",
@@ -156,7 +156,7 @@
 		"format": "󰋊 {free}",
 		"path": "/"
 	},
-	"custom/launcher":{
+	"custom/launcher": {
 		"format": "",
 		"on-click": "rofi -show combi -combi-modi 'drun,run' -show-icons",
 		"on-click-right": "killall rofi"
