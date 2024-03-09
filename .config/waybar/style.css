@@ -209,8 +209,7 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	/*color: #F8BD96;*/
-	color: #ac92c6;
+	color: #F8BD96;
 	background: #2a3139;
 }
 
