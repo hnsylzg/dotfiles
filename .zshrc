@@ -9,4 +9,4 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-alias sudo='sudo -E'
+alias sudo='sudo -E '
