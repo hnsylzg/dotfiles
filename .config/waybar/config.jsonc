@@ -1,28 +1,8 @@
 {
 	"layer": "top",
-	"modules-left": [
-		"custom/launcher",
-		"cpu",
-		"memory",
-		"disk",
-		"custom/playerctl",
-		"custom/playerlabel"
-	],
-	"modules-center": [
-		"hyprland/submap",
-		"hyprland/workspaces",
-		"tray"
-	],
-	"modules-right": [
-		"custom/clipboard",
-		"temperature",
-		"backlight",
-		"pulseaudio",
-		"bluetooth",
-		"network",
-		"battery",
-		"clock"
-	],
+	"modules-left": ["custom/launcher","cpu","memory","disk","custom/playerctl","custom/playerlabel"],
+	"modules-center": ["hyprland/submap","hyprland/workspaces","tray"],
+	"modules-right": ["custom/clipboard","temperature","backlight","pulseaudio","bluetooth","network","battery","clock"],
 //	"hyprland/workspaces": {
 //		"format": "{icon}",
 //		"on-click": "activate",
@@ -66,27 +46,13 @@
 		"critical-threshold": 80,
 		// "format-critical": "{tem:qperatureC}°C {icon}",
 		"format": "{icon} {temperatureC}°C",
-		"format-icons": [
-			"",
-			"",
-			""
-		],
+		"format-icons": ["", "", ""],
 		"on-click": "$TERMINAL htop"
 	},
 	"backlight": {
 		// "device": "acpi_video1",
 		"format": "{icon} {percent}%",
-		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
-		]
+		"format-icons": ["", "", "", "", "", "", "", "", ""]
 	},
 	"battery": {
 		"interval": 30,
@@ -101,13 +67,7 @@
 		"format-alt": "{icon} {time}",
 		// "format-good": "", // An empty format will hide the module
 		// "format-full": "",
-		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
-		]
+		"format-icons": ["", "", "", "", ""]
 	},
 	"tray": {
 		"icon-size": 18,
@@ -139,11 +99,7 @@
 			"phone": "",
 			"portable": "",
 			"car": "",
-			"default": [
-				"",
-				"",
-				""
-			]
+			"default": ["", "", ""]
 		},
 		"on-click": "$TERMINAL pulsemixer",
 		"on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -206,4 +162,3 @@
 		"on-click-right": "killall rofi"
 	}
 }
-
