@@ -70,7 +70,7 @@
 		"format-icons": ["", "", "", "", ""]
 	},
 	"tray": {
-		"icon-size": 18,
+		"icon-size": 20,
 		"spacing": 10
 	},
 	"clock": {
