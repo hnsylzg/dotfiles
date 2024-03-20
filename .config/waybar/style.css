@@ -10,7 +10,7 @@
 
 * {
 	border: none;
-	border-radius: 10;
+	border-radius: 10px;
 	font-family: monospace, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	min-height: 10px;
