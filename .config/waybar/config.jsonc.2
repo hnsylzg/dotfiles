@@ -44,9 +44,9 @@
     "tooltip": false
   },
   "backlight": {
-    "device": "intel_backlight",
-    "on-scroll-up": "light -A 5",
-    "on-scroll-down": "light -U 5",
+   // "device": "intel_backlight",
+    "on-scroll-up": "brightnessctl s +5%",
+    "on-scroll-down": "brightnessctl s 5%-",
     "format": "{icon} {percent}%",
     "format-icons": ["󰃞","󰃟","󰃠"]
   },
