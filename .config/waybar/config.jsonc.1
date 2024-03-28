@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory","disk","custom/playerctl","custom/playerlabel"],
 	"modules-center": ["hyprland/submap","hyprland/workspaces","tray"],
-	"modules-right": ["custom/clipboard","temperature","backlight","pulseaudio","bluetooth","network","battery","clock"],
+	"modules-right": ["custom/clipboard","idle_inhibitor","temperature","backlight","pulseaudio","bluetooth","network","battery","clock"],
 //	"hyprland/workspaces": {
 //		"format": "{icon}",
 //		"on-click": "activate",
@@ -158,6 +158,14 @@
 		"format": "󰋊 {free}",
 		"path": "/"
 	},
+	"idle_inhibitor": {
+    		"format": "{icon}",
+    		"format-icons": {
+      			"activated": "",
+      			"deactivated": ""
+    		},
+    		"tooltip": false
+  	},
 	"custom/launcher": {
 		"format": "",
 		"on-click": "rofi -show combi -combi-modi 'drun,run' -show-icons",
