@@ -73,6 +73,7 @@ window#waybar {
 #cpu,
 #memory,
 #mode,
+#submap,
 #network,
 #pulseaudio,
 #temperature,
@@ -186,6 +187,11 @@ window#waybar {
     padding-left: 5px;
     padding-right: 5px;
     color: @theme_selected_bg_color;
+}
+
+#workspaces button.active {
+    background-color: @theme_selected_bg_color;
+    color: rgb(26, 24, 38);
 }
 
 #workspaces button.focused {
