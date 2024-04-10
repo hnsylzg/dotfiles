@@ -35,7 +35,7 @@ exec-once = wl-clip-persist --clipboard both
 exec-once = pcmanfm -d
 exec-once = nm-applet &
 
-bind = SUPER, V, exec, $scrPath/clipboard.sh
+bind = SUPER, V, exec, cliphist list | wofi -dmenu -p "Select item to copy" | cliphist decode | wl-copy 
  
 # Source a file (multi-file configs)
 # source = ~/.config/hypr/myColors.conf
