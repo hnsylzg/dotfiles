@@ -17,7 +17,6 @@ monitor=,preferred,auto,1
 # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 
 # Execute your favorite apps at launch
-$scrPath = $HOME/.config/hypr/scripts
 #exec-once = waybar & waypaper --restore
 exec-once = waybar
 exec-once = swww kill; swww-daemon --format xrgb & waypaper --restore
@@ -28,8 +27,8 @@ exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CUR
 exec-once = fcitx5 -d
 exec-once = playerctld daemon
 exec-once = swayidle -w timeout 300 'swaylock -f -c 000000 --show-failed-attempts --fade-in 0.2 --grace 2 --effect-vignette 0.5:0.5 --effect-blur 7x5 --ignore-empty-password --screenshots --clock' timeout 600 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on' timeout 900 'systemctl suspend'
-exec-once = [ -x "$(command -v wl-paste)" ] && [ -x "$(command -v cliphist)" ] && wl-paste --watch cliphist store
-exec-once = [ -x "$(command -v wl-paste)" ] && [ -x "$(command -v cliphist)" ] && wl-paste --watch waybar-signal clipboard
+exec-once = sh [ -x "$(command -v wl-paste)" ] && [ -x "$(command -v cliphist)" ] && wl-paste --watch cliphist store
+exec-once = sh [ -x "$(command -v wl-paste)" ] && [ -x "$(command -v cliphist)" ] && wl-paste --watch waybar-signal clipboard
 exec-once = wl-clip-persist --clipboard both
 exec-once = pcmanfm -d
 exec-once = nm-applet &
