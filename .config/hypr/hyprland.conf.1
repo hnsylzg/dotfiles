@@ -28,7 +28,7 @@ exec-once = wl-paste --watch waybar-signal clipboard
 # exec-once = wl-clip-persist --clipboard regular
 exec-once = wl-clip-persist --clipboard regular --all-mime-type-regex \'(?i)^(?!image/x-inkscape-svg).+\'
 exec-once = nm-applet
-exec-once = pcmanfm -d
+exec-once = pcmanfm-qt -d
 exec-once = fcitx5 -d
 exec-once = playerctld daemon
 
@@ -39,7 +39,7 @@ bind = SUPER, V, exec, cliphist list | wofi -dmenu -p "Select item to copy" | cl
  
 # Set programs that you use
 $terminal = foot
-$fileManager = pcmanfm
+$fileManager = pcmanfm-qt
 $browser = google-chrome-stable
 $code = code
 
