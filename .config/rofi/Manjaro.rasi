@@ -10,6 +10,6 @@ listview {
   columns : 1;
 }
 window {
-  width : 250em;
+  width : 25em;
 }
 
