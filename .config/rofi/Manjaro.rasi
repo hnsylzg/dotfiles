@@ -11,7 +11,7 @@ listview {
 }
 window {
   width : 25em;
-  // border : 1px solid;
-  // border-color: #16a085;
+  border : 1px solid;
+  border-color: #16a085;
 }
 
