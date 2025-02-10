@@ -30,9 +30,9 @@
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
     selected-normal-background:  var(lightfg);
-  	lightbg : #141a1b;
+	  lightbg : #141a1b;
 	  background : #141a1b;
-	  lightfg : #16a085;
+	  lightfg :  #f5c2e7;
 	  foreground : #eeeeee;
 	  font : "Roboto 11";
 }
