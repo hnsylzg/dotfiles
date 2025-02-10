@@ -91,7 +91,7 @@
     "cpu": {
         "interval": 2,
         "format": "󰍛 {usage}%",
-        "on-click": "$TERMINAL htop"
+        "on-click": "$TERMINAL btop"
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -107,7 +107,7 @@
         "states": {
             "warning": 85
         },
-        "on-click": "$TERMINAL htop"
+        "on-click": "$TERMINAL btop"
     },
     "mpd": {
         "max-length": 25,
@@ -158,7 +158,7 @@
             "",
             ""
         ],
-        "on-click": "$TERMINAL htop"
+        "on-click": "$TERMINAL btop"
     },
     "tray": {
         "icon-size": 20,
