@@ -11,6 +11,6 @@ listview {
 }
 window {
   width : 25em;
-//  border-color: #16a085;
+// border-color: #16a085;
 }
 
