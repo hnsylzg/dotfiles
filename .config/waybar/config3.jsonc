@@ -9,7 +9,7 @@
         "hyprland/workspaces",
         "custom/scratchpad",
         "hyprland/submap",
-        "tray"
+        "tray",
 	"custom/playerctl"
     ],
     "modules-center": [
