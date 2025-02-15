@@ -94,7 +94,7 @@ window {
     padding:          5;
     background-color: var(background);
     border:           1;
-	  width : 25em;
+	  width : 30em;
 //  border-color: #16a085;
 }
 mainbox {
