@@ -10,6 +10,7 @@
         "custom/scratchpad",
         "hyprland/submap",
         "tray"
+	"custom/playerctl"
     ],
     "modules-center": [
         "hyparland/window"
