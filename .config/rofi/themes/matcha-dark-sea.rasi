@@ -33,7 +33,7 @@
     alternate-active-foreground: @active-foreground;
     active-background:           #359b882b;
     selected-active-background:  #359b88;
-    font:                        "Monospace 10";
+    font:                        "Roboto 10";
 }
 window {
     background-color: @background;
