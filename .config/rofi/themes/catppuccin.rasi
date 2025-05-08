@@ -96,7 +96,7 @@ window {
     border:           2;
 	  width : 25em;
     border-radius: 10px;
- border-color: #ca9ee6;
+    border-color: #ca9ee6;
 }
 mainbox {
     padding: 0;
