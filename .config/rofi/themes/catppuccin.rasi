@@ -95,6 +95,7 @@ window {
     background-color: var(background);
     border:           1;
 	  width : 25em;
+    border-radius: 10px;
 //  border-color: #16a085;
 }
 mainbox {
