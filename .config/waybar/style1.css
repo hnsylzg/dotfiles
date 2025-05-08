@@ -363,7 +363,8 @@ window#waybar.hidden {
     padding-right: 10px;
     border-radius: 10px;
     transition: none;
-    color: #e17f69;
+    color: #96cdfb;
+    /* color: #e17f69; */
     /*background: #312e2e;*/
 }
 
