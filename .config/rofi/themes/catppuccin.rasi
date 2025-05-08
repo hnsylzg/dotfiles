@@ -93,10 +93,10 @@ element-icon {
 window {
     padding:          5;
     background-color: var(background);
-    border:           1;
+    border:           2;
 	  width : 25em;
     border-radius: 10px;
-//  border-color: #16a085;
+ border-color: #ca9ee6;
 }
 mainbox {
     padding: 0;
