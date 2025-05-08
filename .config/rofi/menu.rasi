@@ -16,20 +16,20 @@ configuration {
   me-accept-entry: "!MousePrimary";
   }
 * {
-  lightbg : #141a1b;
-  background : #141a1b;
-  lightfg : #f5c2e7;
-  foreground : #eeeeee;
-  font : "Roboto 11";
+  lightbg: #141a1bcc;
+  background: #141a1bcc;
+  lightfg: #f5c2e7;
+  foreground: #eeeeee;
+  font: "Roboto 11";
 }
 listview {
-  lines : 40;
-  columns : 1;
+  lines: 40;
+  columns: 1;
 }
 window {
   location: north west;
-  width : 15em;
-  border-radius: 10px;
+  width: 15em;
+  border-radius: 10px; 
   border: 2;
   border-color: #ca9ee6;
   x-offset: 6;
