@@ -189,7 +189,7 @@
     "signal": 9
   },
   "custom/launcher": {
-    "format": "<span font='10'></span>",
+    "format": "",
     "on-click": "$HOME/.config/waybar/launcher && pkill -RTMIN+8 waybar",
     "tooltip-format": "",
     "tooltip": false,
