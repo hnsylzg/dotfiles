@@ -1,0 +1,8 @@
+configuration {
+  hover-select: true;
+  me-select-entry: ""; 
+  // me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];  
+  me-select-entry: "MousePrimary"; //MousePrimary does the click down action
+  me-accept-entry: "!MousePrimary"; //!MousePrimary does the click up
+}
+@theme "/home/lzg/.config/rofi/themes/catppuccin.rasi"
