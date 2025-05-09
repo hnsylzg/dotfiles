@@ -98,7 +98,7 @@ window {
     padding:          5;
     // background-color: var(background);
     background-color: #141a1bcc;
-    border:           2;
+    border:           3;
 	  width : 25em;
     border-radius: 10px;
     border-color: #ca9ee6;
