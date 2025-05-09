@@ -250,5 +250,5 @@
     "exec-if": "pgrep wf-recorder",
     "on-click": "pkill -x -SIGRTMIN+8 waybar",
     "signal": 8
-    },
+  }
 }
