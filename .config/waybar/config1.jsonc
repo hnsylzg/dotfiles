@@ -11,6 +11,7 @@
     "custom/playerctl"
   ],
   "modules-center": [
+    "custom/wf-recorder",
     "hyprland/submap",
     "hyprland/workspaces",
     "tray"
@@ -240,5 +241,14 @@
     "on-click": "~/.config/waybar/checkupdates.sh check && ~/.config/waybar/checkupdates.sh upgrade",
     "on-click-middle": "pkill -RTMIN+14 waybar",
     "signal": 14
-  }
+  },
+  "custom/wf-recorder": {
+    "interval": "once",
+    "return-type": "json",
+    "format": "{}",
+    "exec": "echo '{\"class\": \"recording\",\"text\":\"󰑊\",\"tooltip\":\"press $mod+Esc to stop recording\"}'",
+    "exec-if": "pgrep wf-recorder",
+    "on-click": "pkill -x -SIGRTMIN+8 waybar",
+    "signal": 8
+    },
 }
