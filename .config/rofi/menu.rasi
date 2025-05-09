@@ -16,8 +16,8 @@ configuration {
   me-accept-entry: "!MousePrimary";
   }
 * {
-  lightbg: #141a1bcc;
-  background: #141a1bcc;
+  lightbg: #141a1b;
+  background: #141a1b;
   lightfg: #f5c2e7;
   foreground: #eeeeee;
   font: "Roboto 11";
