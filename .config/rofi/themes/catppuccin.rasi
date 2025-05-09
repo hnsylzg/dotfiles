@@ -30,11 +30,11 @@
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
     selected-normal-background:  var(lightfg);
-	  lightbg : #141a1b;
-	  background : #141a1b;
-	  lightfg :  #f5c2e7;
-	  foreground : #eeeeee;
-	  font : "Roboto 11";
+    lightbg : #141a1b;
+    background : #141a1b;
+    lightfg :  #f5c2e7;
+    foreground : #eeeeee;
+    font : "Roboto 11";
 }
 element {
     padding: 1px ;
@@ -117,8 +117,8 @@ listview {
     spacing:      2px ;
     fixed-height: 0;
     border:       1px dash 0px 0px ;
-	lines : 10;
-	columns : 1;
+    lines : 10;
+    columns : 1;
 }
 scrollbar {
     width:        4px ;
