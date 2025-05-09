@@ -30,7 +30,7 @@ window {
   location: north west;
   width: 15em;
   border-radius: 10px; 
-  border: 2;
+  border: 3;
   border-color: #ca9ee6;
   background-color: #141a1bcc;
   x-offset: 6;
