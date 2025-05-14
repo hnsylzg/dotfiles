@@ -2,7 +2,7 @@
 
 alias l='exa -lahF --color=always --icons --sort=size --group-directories-first'
 alias ls='exa -lhF --color=always --icons --sort=size --group-directories-first'
-alias lst='exa -lahFT --color=always --icons --sort=size --group-directories-first'
+alias lst='exa -lahTF --color=always --icons --sort=size --group-directories-first'
 
 alias matrix='unimatrix -f -l ocCgGkS -s 96'
 alias cmat='cmatrix -a'
