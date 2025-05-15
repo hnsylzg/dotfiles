@@ -104,7 +104,8 @@ tooltip label {
 #custom-playerctl,
 #custom-playerlabel,
 #custom-update,
-#custom-cava-internal {
+#custom-cava-internal,
+#custom-wf-recorder {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -226,4 +227,10 @@ tooltip label {
     color: #c0caf5;
     /*color: #e68da5*/
     /*color: rgb(245, 194, 231);*/
+}
+
+#custom-wf-recorder {
+    color: #f48f8f;
+    padding-right: 15px;
+    font-size: 18px;
 }

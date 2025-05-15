@@ -67,7 +67,8 @@ window#waybar.solo {
 #custom-powermenu,
 #custom-scratchpad,
 #tray,
-#backlight {
+#backlight,
+#custom-wf-recorder {
     margin: 0px 6px 0px 10px;
     /*    min-width: 30px;*/
 }
@@ -121,4 +122,9 @@ window#waybar.solo {
 
 #mpd.stopped {
     background: transparent;
+}
+
+#custom-wf-recorder {
+    color: #f48f8f;
+    padding-right: 15px;
 }
