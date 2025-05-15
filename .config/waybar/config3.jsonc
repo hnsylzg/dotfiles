@@ -16,6 +16,7 @@
     "hyparland/window"
   ],
   "modules-right": [
+    "custom/wf-recorder",
     "custom/update",
     "custom/clipboard",
     "network",
@@ -256,7 +257,7 @@
     "on-scroll-up": "playerctl position 10-",
     "on-scroll-down": "playerctl position 10+"
   },
- "custom/update": {
+  "custom/update": {
     "format": "{}  ",
     "interval": 3600,
     "return-type": "json",
@@ -265,5 +266,14 @@
     "on-click": "~/.config/waybar/checkupdates.sh check && ~/.config/waybar/checkupdates.sh upgrade",
     "on-click-middle": "pkill -RTMIN+14 waybar",
     "signal": 14
+  },
+  "custom/wf-recorder": {
+    "interval": "once",
+    "return-type": "json",
+    "format": "{}",
+    "exec": "echo '{\"class\": \"recording\",\"text\":\"󰑊\",\"tooltip\":\"press $mod+Esc to stop recording\"}'",
+    "exec-if": "pgrep wf-recorder",
+    "on-click": "pkill -x -SIGRTMIN+8 waybar",
+    "signal": 8
   }
 }
