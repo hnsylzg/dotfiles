@@ -43,7 +43,7 @@
 
 .thunar .standard-view.frame widget.view:selected, XfdesktopIconView.view:active, calendar.raven-calendar:selected, box.vertical > widget > widget:selected, calendar:selected, popover.background modelbutton.flat:selected,
 popover.background .menuitem.button.flat:selected, .csd treeview.view:selected, .background.csd .view:selected {
-  color: #eff1f5;
+  color: #2f2f38de;
   background-color: alpha(currentColor, 0.1);
 }
 
