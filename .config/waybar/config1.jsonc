@@ -192,6 +192,7 @@
   "custom/launcher": {
     "format": "",
     "on-click": "$HOME/.config/waybar/launcher && pkill -RTMIN+8 waybar",
+    "on-click-right": "killall rofi",
     "tooltip-format": "",
     "tooltip": false,
     "signal": 8
