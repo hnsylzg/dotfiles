@@ -37,5 +37,5 @@ window {
   y-offset: 6;
 }
 element selected.normal {
-    text-color:        #141a1b;
+    text-color: #141a1b;
  }
