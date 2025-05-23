@@ -24,7 +24,8 @@ if [ $status != 0 ]; then
   timestamp=$(date +'recording_%Y%m%d-%H%M%S')
 
   notify "Select a region to record" -t 1000
-  area=$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp)
+  # area=$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp)
+  area=$(hyprctl clients -j | jq -r '.[] | select(.mapped == true) | "\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' | slurp)
 
   countdown
   (sleep 0.5 && pkill -x -SIGRTMIN+8 waybar) &
