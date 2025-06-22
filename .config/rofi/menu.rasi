@@ -25,6 +25,7 @@ configuration {
 listview {
   lines: 20;
   columns: 1;
+  border:    0;
 }
 window {
   location: north west;
