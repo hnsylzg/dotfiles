@@ -24,7 +24,8 @@
     "bluetooth",
     "network",
     "battery",
-    "clock"
+    "clock",
+    "custom/powermenu"
   ],
   //	"hyprland/workspaces": {
   //		"format": "{icon}",
@@ -191,7 +192,7 @@
   },
   "custom/launcher": {
     "format": "",
-    "on-click": "$HOME/.config/waybar/launcher && pkill -RTMIN+8 waybar",
+    "on-click": "$HOME/.config/waybar/scripts/launcher.sh && pkill -RTMIN+8 waybar",
     "tooltip-format": "",
     "tooltip": false,
     "signal": 8
@@ -236,11 +237,17 @@
     "format": " {}",
     "interval": 3600,
     "return-type": "json",
-    "exec": "~/.config/waybar/checkupdates.sh status",
-    "exec-if": "~/.config/waybar/checkupdates.sh check",
-    "on-click": "~/.config/waybar/checkupdates.sh check && ~/.config/waybar/checkupdates.sh upgrade",
+    "exec": "~/.config/waybar/scripts/checkupdates.sh status",
+    "exec-if": "~/.config/waybar/scripts/checkupdates.sh check",
+    "on-click": "~/.config/waybar/scripts/checkupdates.sh check && ~/.config/waybar/scripts/checkupdates.sh upgrade",
     "on-click-middle": "pkill -RTMIN+14 waybar",
     "signal": 14
+  },
+  "custom/powermenu": {
+    "format": "",
+    "on-click": "$HOME/.config/waybar/scripts/powermenu.sh",
+    "tooltip-format": "",
+    "tooltip": false,
   },
   "custom/wf-recorder": {
     "interval": "once",
