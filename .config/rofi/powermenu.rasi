@@ -33,7 +33,7 @@ window {
     background-color: #2d2d3a;
     width:            120px;
     location:         north east;
-    y-offset:          4;
+    y-offset:          6;
     x-offset:         -6;
 }
 listview {
