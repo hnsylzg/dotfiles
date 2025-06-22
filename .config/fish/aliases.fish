@@ -1,8 +1,9 @@
 # Aliases
 
+
 alias l='exa -lahF --color=always --icons --sort=size --group-directories-first'
 alias ls='exa -lhF --color=always --icons --sort=size --group-directories-first'
-alias lst='exa -lahTF --color=always --icons --sort=size --group-directories-first'
+alias lst='exa -lahFT --color=always --icons --sort=size --group-directories-first'
 
 alias matrix='unimatrix -f -l ocCgGkS -s 96'
 alias cmat='cmatrix -a'
@@ -39,7 +40,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias cp="cp -i"
 alias rm='rm -i'
-alias np='nano PKGBUILD'
+alias np='nvim PKGBUILD'
 alias sudoenv='sudo env PATH=$PATH'
 alias xo='xdg-open &>/dev/null'
 alias xsetkeyr='xset r rate 182 42'
@@ -85,9 +86,9 @@ alias update="sudo pacman -Syu"
 alias upall "$HOME/.config/fish/upall.sh"
 alias key="sudo pacman -Syu --noconfirm"
 alias ref="sudo systemctl start reflector.service"
-alias bashrc="nano ~/.bashrc && source ~/.bashrc"
-alias fstab="sudo nano /etc/fstab"
-alias grub="sudo nano /etc/default/grub"
+alias bashrc="nvim ~/.bashrc && source ~/.bashrc"
+alias fstab="sudoedit /etc/fstab"
+alias grub="sudoedit /etc/default/grub"
 alias grubup="sudo update-grub"
 alias syy="sudo pacman -Syy"
 alias nf='cls && tput setaf 3;figlet ArchOS rolling && neofetch --ascii_colors 12 --colors 10 11 11 12 10 7'
@@ -124,11 +125,6 @@ alias wget='wget -c'
 alias top="htop"
 
 # aliases git
-alias blizz="git clone https://github.com/RedBlizard/Hyprland-blizz.git"
-alias install="git clone https://github.com/RedBlizard/hyprland-installation.git"
-alias red="git clone https://github.com/RedBlizard/bspwm-rednord.git"
-alias wall="git clone https://github.com/RedBlizard/wallpapers-redblizard.git"
-alias poly="git clone https://github.com/RedBlizard/polybar-rednord.git"
 alias gi="git init"
 alias gs="git status"
 alias ga="git add"
@@ -139,8 +135,5 @@ alias gst="git stash"
 alias gsp="git stash; git pull"
 alias gcheck="git checkout"
 alias gcredential="git config credential.helper store"
-
-alias xdg="$HOME/.config/hypr/scripts/rebuild_xdg_menu.sh"
-alias idle="$HOME/.config/hypr/scripts/restart-hypridle.sh"
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
