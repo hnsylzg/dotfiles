@@ -32,6 +32,7 @@ window {
     // transparency:     "real";
     background-color: #2d2d3a;
     width:            120px;
+    border-radius:    10px;
     location:         north east;
     y-offset:          6;
     x-offset:         -6;
