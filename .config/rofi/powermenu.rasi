@@ -30,7 +30,7 @@ window {
     // border-radius: 10px; 
     padding:          10;
     // transparency:     "real";
-    background-color: #2d2d3acc;
+    background-color: #2d2d3a;
     width:            120px;
     location:         north east;
     y-offset:          4;
