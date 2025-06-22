@@ -166,7 +166,7 @@
     "spacing": 5
   },
   "custom/cava-internal": {
-    "exec": "~/.config/waybar/cava.sh",
+    "exec": "~/.config/waybar/scripts/cava.sh",
     //"exec": "~/.config/waybar/cava-internal.sh",
     "tooltip": false
   },
@@ -188,7 +188,7 @@
   },
   "custom/powermenu": {
     "format": "",
-    // "on-click": "~/.config/rofi/powermenu.sh",
+    // "on-click": "~/.config/waybar/scripts/powermenu.sh",
     //"on-click": "hyprctl exc",
     "on-click": "wlogout",
     "tooltip": false
@@ -197,9 +197,9 @@
     "format": " {}",
     "interval": 3600,
     "return-type": "json",
-    "exec": "~/.config/waybar/checkupdates.sh status",
-    "exec-if": "~/.config/waybar/checkupdates.sh check",
-    "on-click": "~/.config/waybar/checkupdates.sh check && ~/.config/waybar/checkupdates.sh upgrade",
+    "exec": "~/.config/waybar/scripts/checkupdates.sh status",
+    "exec-if": "~/.config/waybar/scripts/checkupdates.sh check",
+    "on-click": "~/.config/waybar/scripts/checkupdates.sh check && ~/.config/waybar/scripts/checkupdates.sh upgrade",
     "on-click-middle": "pkill -RTMIN+14 waybar",
     "signal": 14
   },
