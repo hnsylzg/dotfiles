@@ -45,3 +45,5 @@
 #        . "$f"
 #    done
 #fi
+
+. "$HOME/.local/bin/env"
