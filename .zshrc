@@ -16,3 +16,4 @@ alias la='ls -la'
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 . "$HOME/.local/bin/env"
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
