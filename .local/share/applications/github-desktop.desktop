@@ -3,7 +3,7 @@ Name=GitHub Desktop
 Comment=Extend your GitHub workflow beyond your browser with GitHub Desktop
 Comment[es]=Trabaja con GitHub desde tu escritorio.
 Comment[eu]=GitHub-ekin lan egin zure ordenagailutik.
-Exec=/usr/bin/github-desktop --ozone-platform-hint=auto --enable-wayland-ime %U
+Exec=/usr/bin/github-desktop --enable-wayland-ime %U
 Terminal=false
 Type=Application
 Icon=github-desktop
