@@ -48,3 +48,4 @@
 
 . "$HOME/.local/bin/env"
 export PYCHARM_VM_OPTIONS="/home/lzg/.config/jetbra/vmoptions/pycharm.vmoptions"
+export SHELL=/usr/bin/fish
