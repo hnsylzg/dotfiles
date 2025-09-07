@@ -243,7 +243,7 @@
     "return-type": "json",
     "exec": "~/.config/waybar/scripts/checkupdates.sh status",
     "exec-if": "~/.config/waybar/scripts/checkupdates.sh check",
-    "on-click": "~/.config/waybar/scripts/checkupdates.sh check && ~/.config/waybar/scripts/checkupdates.sh upgrade && pkill -RTMIN+14 waybar",
+    "on-click": "~/.config/waybar/scripts/checkupdates.sh check && ~/.config/waybar/scripts/checkupdates.sh upgrade",
     "on-click-middle": "pkill -RTMIN+14 waybar",
     "on-click-right": "xdg-terminal-exec yay -Syu --noconfirm && pkill -RTMIN+14 waybar",
     "signal": 14
