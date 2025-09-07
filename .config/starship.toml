@@ -21,7 +21,8 @@ format = "[$duration]($style) "
 
 [status]
 disabled = false
-format = "[$symbol $status]($style) "
+# format = "[$symbol $status]($style) "
+format = '[$symbol$status_common_meaning$status_signal_name$status_maybe_int]($style) '
 symbol = "[✘](fg:red)"
 success_symbol = "[✔](fg:green)"
 not_found_symbol = ""
