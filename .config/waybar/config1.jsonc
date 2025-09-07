@@ -245,13 +245,14 @@
     "exec-if": "~/.config/waybar/scripts/checkupdates.sh check",
     "on-click": "~/.config/waybar/scripts/checkupdates.sh check && ~/.config/waybar/scripts/checkupdates.sh upgrade",
     "on-click-middle": "pkill -RTMIN+14 waybar",
+    "on-click-right": "yay -Syu --noconfirm && yay -Scc --noconfirm && pacman -Qtdq | sudo pacman -Rsn -",
     "signal": 14
   },
   "custom/powermenu": {
     "format": "",
     "on-click": "$HOME/.config/waybar/scripts/powermenu.sh",
     "tooltip-format": "",
-    "tooltip": false,
+    "tooltip": false
   },
   "custom/wf-recorder": {
     "interval": "once",
