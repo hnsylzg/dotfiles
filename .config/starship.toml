@@ -60,7 +60,7 @@ symbol = " "
 
 [os]
 disabled = false
-format = ' [$symbol]($style)'
+format = ' [$symbol]($style) '
 style = "bold green"
 
 [os.symbols]
