@@ -12,7 +12,7 @@ if status is-interactive
     # Enable neofetch or the custom bash script for getting images in neofetch
     #source ~/.config/neofetch/launch-neofetch.sh
     #neofetch
-    fastfetch
+    #fastfetch
 
     # Enable yay autocomplete in the fish shell
     complete -c yay -f -n __fish_yay_search_packages
