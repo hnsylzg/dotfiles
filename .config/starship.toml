@@ -15,6 +15,7 @@ disabled = true
 
 [directory]
 style = "bold blue"
+truncation_symbol = "…/"
 
 [cmd_duration]
 format = "[$duration]($style) "
