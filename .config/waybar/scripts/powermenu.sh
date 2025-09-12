@@ -28,7 +28,11 @@ preferred_launcher="rofi"
 LOCK_CMD="swaylock -f -c 000000 --show-failed-attempts --fade-in 0.2 --grace 5 --grace-no-mouse --effect-vignette 0.5:0.5 --effect-blur 7x5 --ignore-empty-password --screenshots --clock"  # 替换为您的锁屏命令，如: "dm-tool lock", "light-locker-command -l", "xscreensaver-command -lock"
 
 # 注销命令 - 通用方法[1,4](@ref)
-LOGOUT_CMD="loginctl terminate-session $XDG_SESSION_ID"  # 或 "gnome-session-quit --logout"
+if pgrep -x "niri" >/dev/null; then
+  LOGOUT_CMD="niri msg action quit --skip-confirmation"
+else
+  LOGOUT_CMD="loginctl terminate-session $XDG_SESSION_ID"  # 或 "gnome-session-quit --logout"
+fi
 
 #######################################################################
 #                             END CONFIG                              #
