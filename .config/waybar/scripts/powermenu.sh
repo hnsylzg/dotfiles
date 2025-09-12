@@ -7,6 +7,11 @@ HLFG_COLOR="#111111"
 HLBG_COLOR="#bbbbbb"
 BORDER_COLOR="#222222"
 
+if [[ $(pidof rofi) ]]; then
+    pkill rofi
+    exit 0
+fi
+
 # Rofi配置
 ROFI_OPTIONS=(-theme ~/.config/rofi/powermenu.rasi)
 # Zenity配置
