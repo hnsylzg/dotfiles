@@ -14,7 +14,7 @@
     "custom/wf-recorder",
     "hyprland/submap",
     "hyprland/workspaces",
-    "niri/workspaces",
+    //"niri/workspaces",
     "tray"
   ],
   "modules-right": [
