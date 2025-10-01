@@ -125,7 +125,7 @@ window#waybar.hidden {
     transition: none;
     /*color: #cd79c1;*/
     color: #e4bd86;
-    background: #252733;
+    background: #2a3139;
 }
 
 #bluetooth {
@@ -137,7 +137,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #53b0cf;
-    background-color: #252733;
+    background-color: #2a3139;
 }
 
 #temperature {
@@ -149,7 +149,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #96cdfb;
-    background-color: #252733;
+    background-color: #2a3139;
 }
 
 #pulseaudio {
@@ -161,7 +161,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #ac92c6;
-    background: #2d2d3a;
+    background: #2a3139;
 }
 
 #battery {
@@ -173,7 +173,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #7dda9f;
-    background: #2d2d3a;
+    background: #2a3139;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate
@@ -240,7 +240,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #7dda9f;
-    background-color: #252733;
+    background-color: #2a3139;
 }
 
 #cpu {
@@ -252,7 +252,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #f48f8f;
-    background-color: #252733;
+    background-color: #2a3139;
 }
 
 #disk {
@@ -277,7 +277,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #e68da5;
-    background: #292c3a;
+    background: #2a3139;
 }
 
 #keyboard-state {
@@ -289,7 +289,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #ac92c6;
-    background: #2d2d3a;
+    background: #2a3139;
 }
 
 #mpd {
@@ -301,7 +301,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #ac92c6;
-    background: #2d2d3a;
+    background: #2a3139;
 }
 
 #mpd.paused {
@@ -326,7 +326,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #ac92c6;
-    background: #2d2d3a;
+    background: #2a3139;
     min-width: 16px;
 }
 
@@ -339,7 +339,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #ac92c6;
-    background: #2d2d3a;
+    background: #2a3139;
 }
 
 #custom-clipboard {
@@ -459,7 +459,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #c0caf5;
-    background: #2d2d3a;
+    background: #2a3139;
 }
 
 #custom-powermenu {
@@ -472,7 +472,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: rgb(242, 143, 173);
-    background: #2d2d3a;
+    background: #2a3139;
 }
 
 #submap {
