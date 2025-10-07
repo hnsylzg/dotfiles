@@ -20,7 +20,7 @@ environment {
     // GBM_BACKEND "nvidia-drm"
     // __GLX_VENDOR_LIBRARY_NAME "nvidia"
     // WLR_NO_HARDWARE_CURSORS "1"
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    // ELECTRON_OZONE_PLATFORM_HINT "auto"
     DISPLAY ":0"
 }
 
