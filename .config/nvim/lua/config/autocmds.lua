@@ -8,15 +8,14 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "text", "txt" },
-  callback = function()
-    vim.opt_local.spell = false
-  end,
+	pattern = { "text", "txt" },
+	callback = function()
+		vim.opt_local.spell = false
+	end,
 })
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "markdown", "txt" },
-  callback = function()
-    vim.opt_local.spell = false
-  end,
+	pattern = { "markdown", "txt" },
+	callback = function()
+		vim.opt_local.spell = false
+	end,
 })
-
