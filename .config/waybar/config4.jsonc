@@ -24,7 +24,8 @@
     "bluetooth",
     "network",
     "battery",
-    "clock"
+    "clock",
+    "custom/powermenu"
   ],
   //	"hyprland/workspaces": {
   //		"format": "{icon}",
@@ -224,6 +225,12 @@
     "on-click": "~/.config/waybar/scripts/checkupdates.sh check && ~/.config/waybar/scripts/checkupdates.sh upgrade",
     "on-click-middle": "pkill -RTMIN+14 waybar",
     "signal": 14
+  },
+  "custom/powermenu": {
+    "format": "",
+    "on-click": "$HOME/.config/waybar/scripts/powermenu.sh",
+    "tooltip-format": "",
+    "tooltip": false
   },
   "custom/wf-recorder": {
     "interval": "once",
