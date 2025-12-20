@@ -37,7 +37,8 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding: 0 10px;
     border-radius: 10px;
-    background: #2a3139;
+    /* background: #2a3139; */
+    background: rgba(42, 49, 57, 0.8);
     transition: none;
 }
 
