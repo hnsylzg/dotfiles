@@ -1,5 +1,5 @@
 [mpd]
-mpd_music_dir = "/home/lzg/音乐/CloudMusic"
+mpd_music_dir = "/home/lzg/Music/Music"
 mpd_host = "localhost"
 mpd_port = "6600"
 mpd_crossfade_time = "2"
