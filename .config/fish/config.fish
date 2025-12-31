@@ -24,7 +24,3 @@ if status is-interactive
     # The line below is needed to make starship working in the fish shell
     starship init fish | source
 end
-
-if not contains /usr/share/fish/vendor_completions.d $fish_complete_path
-    set -p fish_complete_path /usr/share/fish/vendor_completions.d
-end
