@@ -1,8 +1,8 @@
 * {
-  lightbg : #141a1b;
-  background : #141a1b;
-  lightfg : #f5c2e7;
-  foreground : #eeeeee;
+  lightbg : @surface-container;
+  background : @surface-container;
+  lightfg : @primary;
+  foreground : @on-surface;
   font : "Roboto 11";
 }
 listview {
@@ -11,6 +11,6 @@ listview {
 }
 window {
   width : 25em;
-// border-color: #16a085;
+  border-color: @outline;
 }
 

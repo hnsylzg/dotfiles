@@ -1,0 +1,4 @@
+[templates.hyprland]
+input_path = 'SHELL_DIR/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+# post_hook = 'hyprctl reload'

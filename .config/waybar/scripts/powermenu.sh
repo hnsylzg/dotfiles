@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# 颜色配置
-FG_COLOR="#bbbbbb"
-BG_COLOR="#111111"
-HLFG_COLOR="#111111"
-HLBG_COLOR="#bbbbbb"
-BORDER_COLOR="#222222"
 
 if [[ $(pidof rofi) ]]; then
     pkill rofi
@@ -118,11 +112,9 @@ rofi_colors=""
 
 function prepare_launcher() {
   if [[ "$1" == "rofi" ]]; then
-    rofi_colors=(-bc "${BORDER_COLOR}" -bg "${BG_COLOR}" -fg "${FG_COLOR}" \
-        -hlfg "${HLFG_COLOR}" -hlbg "${HLBG_COLOR}")
     launcher_exe="rofi"
     launcher_options=(-dmenu -i -lines "${menu_nrows}" -p "电源菜单: " \
-        "${rofi_colors}" "${ROFI_OPTIONS[@]}")
+      "${ROFI_OPTIONS[@]}")
   elif [[ "$1" == "zenity" ]]; then
     launcher_exe="zenity"
     launcher_options=(--list --title="${ZENITY_TITLE}" --text="${ZENITY_TEXT}" \
@@ -148,7 +140,7 @@ selection="$(printf '%s\n' "${!menu[@]}" | sort | "${launcher[@]}")"
 function ask_confirmation() {
   if [ "${launcher_exe}" == "rofi" ]; then
     confirmed=$(echo -e "Yes\nNo" | rofi -dmenu -i -lines 2 -p "${selection}?" \
-      "${rofi_colors}" "${ROFI_OPTIONS[@]}")
+      "${ROFI_OPTIONS[@]}")
     [ "${confirmed}" == "Yes" ] && confirmed=0
   elif [ "${launcher_exe}" == "zenity" ]; then
     zenity --question --text "确定要${selection}吗?"
