@@ -378,7 +378,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"^waypaper$"# 
+    match app-id=r#"^(waypaper|floating_shell)$"# 
     open-floating true
 }
 
