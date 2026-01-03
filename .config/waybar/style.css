@@ -1,0 +1,136 @@
+/* 引入 Matugen 生成的变量 */
+@import "colors.css";
+
+@keyframes blink-critical {
+    50% {
+        color: @on_surface_variant;
+    }
+    to {
+        /* M3 Error 角色 */
+        color: @error; 
+    }
+}
+
+* {
+    border: none;
+    border-radius: 10px; /* M3 风格圆角略大 */
+    font-family: "Roboto", "JetBrains Mono", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* 基础模块样式：使用 Surface Container 建立层级 */
+#network, #bluetooth, #temperature, #pulseaudio, #battery, 
+#backlight, #memory, #cpu, #disk, #clock, #keyboard-state, 
+#mpd, #language, #submap, #idle_inhibitor, #custom-clipboard, 
+#custom-playerctl, #custom-playerlabel, #custom-update, 
+#custom-powermenu, #tray, #custom-wallpaper, #custom-media, 
+#custom-wf-recorder, #custom-launcher, #custom-cava-internal {
+    margin-top: 6px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    padding: 0 12px;
+    border-radius: 10px;
+    /* 使用 M3 容器色，比纯黑背景略亮 */
+    background: @surface_container; 
+    /* 默认文字颜色使用次要表面色 */
+    color: @on_surface_variant;
+    transition: all 0.3s ease;
+}
+
+/* --- 核心角色映射 --- */
+
+/* 1. 主角模块 (Primary): 使用最醒目的青色 */
+/* #clock { color: @primary; } */
+#custom-launcher { color: @on_primary_container; padding-left: 10px; padding-right: 14px; }
+#custom-clipboar {padding-left: 10px; padding-right: 14px; }
+/* 2. 状态模块 (Secondary/Tertiary): 柔和的色调 */
+/* #network, #bluetooth { color: @secondary; } */
+/* #memory, #cpu, #disk { color: @tertiary; } */
+/* #pulseaudio, #backlight { color: @primary_fixed_dim; } */
+
+/* 3. 电池状态 (使用 M3 标准错误/警告逻辑) */
+#battery { color: @secondary; }
+#battery.charging, #battery.plugged { color: @primary; }
+#battery.warning { color: @tertiary; } 
+#battery.critical { color: @error; }
+#battery.critical.discharging { 
+    animation-name: blink-critical; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite; 
+    animation-direction: alternate; 
+}
+
+/* 4. 工作区样式优化 (M3 药丸形状) */
+#workspaces button {
+    background: @surface_container_high;
+    padding: 0 8px;
+    color: @on_surface_variant;
+    margin-top: 6px;
+    margin-left: 8px;
+    border-radius: 10px; /* 药丸形 */
+}
+
+#workspaces button.focused, #workspaces button.active { 
+    /* 选中状态使用 Primary 容器，产生明亮的点击感 */
+    color: @on_primary_container; 
+    background: @primary_container; 
+    min-width: 20px;
+}
+
+#workspaces button:hover { 
+    background: @surface_bright; 
+    color: @on_surface;
+    padding: 0 5px;
+}
+
+/* 5. 托盘与特殊插件 */
+#tray { color: @on_surface_variant; }
+
+#custom-powermenu { 
+    color: @error; 
+    background: @error_container; /* 醒目的红色退出键 */
+    padding-left: 10px;
+    padding-right: 14px; 
+    margin-right: 8px; 
+}
+
+/* 6. 音乐播放器 (MPD / Playerctl) */
+#mpd, #custom-playerctl, #custom-playerlabel {
+    background: transparent;
+    color: @secondary;
+}
+
+#mpd.paused, #custom-playerctl.Paused { 
+    color: @outline; 
+    font-style: italic; 
+}
+
+#custom-playerctl.Stopped { color: transparent; }
+
+/* 窗口标题 */
+#window { 
+    margin-top: 6px; 
+    padding: 0 10px; 
+    color: @on_surface; 
+    background: transparent; 
+}
+
+#submap { 
+color: @on_tertiary_container; 
+background: transparent; 
+font-style: italic; 
+}
+
+#custom-wf-recorder {
+  color: @error;
+  background: transparent;
+  font-size: 20px;
+}
+
+#custom-cava-internal { background: transparent; }
