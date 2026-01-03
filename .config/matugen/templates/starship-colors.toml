@@ -1,6 +1,6 @@
 # 这里的颜色定义参考了 starship-colors.toml 的调色板逻辑
 format = """
-$os$directory(bold #00dce3)$git_branch$git_status[❯](bold #00dce3)[❯](bold #a3cddb)[❯](bold #99cdee) """
+$os$directory(bold {{colors.primary.default.hex}})$git_branch$git_status[❯](bold {{colors.primary.default.hex}})[❯](bold {{colors.secondary.default.hex}})[❯](bold {{colors.tertiary.default.hex}}) """
 
 right_format = """
 $status\
@@ -15,7 +15,7 @@ add_newline = false
 disabled = true
 
 [directory]
-style = "bold #00dce3"
+style = "bold {{colors.primary.default.hex}}"
 truncation_symbol = "…/"
 # 继承自 starship-colors.toml 的目录替换
 [directory.substitutions]
@@ -26,13 +26,13 @@ truncation_symbol = "…/"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "#bbc9c9"
+style = "{{colors.on_surface_variant.default.hex}}"
 
 [status]
 disabled = false
 format = '[$symbol$status_common_meaning$status_signal_name$status_maybe_int]($style) '
-symbol = "[✘](fg:#ffb4ab)"
-success_symbol = "[✔](fg:#00dce3)"
+symbol = "[✘](fg:{{colors.error.default.hex}})"
+success_symbol = "[✔](fg:{{colors.primary.default.hex}})"
 not_found_symbol = ""
 not_executable_symbol = ""
 sigint_symbol = "ﭦ"
@@ -40,47 +40,47 @@ map_symbol = true
 
 [git_branch]
 format = "[$symbol$branch]($style) "
-style = "bold #a3cddb"
+style = "bold {{colors.secondary.default.hex}}"
 
 [package]
 format = "[$symbol$version]($style) "
 symbol = " "
-style = "#99cdee"
+style = "{{colors.tertiary.default.hex}}"
 
 [python]
 # 结合了 starship.toml 的格式和 starship-colors.toml 的前缀
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = " "
-style = "#00dce3"
+style = "{{colors.primary.default.hex}}"
 pyenv_prefix = 'venv'
 
 [nodejs]
 format = "[$symbol($version )]($style)"
-style = "#a3cddb"
+style = "{{colors.secondary.default.hex}}"
 
 [php]
 format = "[$symbol($version )]($style)"
 symbol = " "
-style = "#99cdee"
+style = "{{colors.tertiary.default.hex}}"
 
 [java]
 format = "[${symbol}(${version} )]($style)"
 symbol = " "
-style = "#00dce3"
+style = "{{colors.primary.default.hex}}"
 
 [rust]
 format = "[$symbol($version )]($style)"
-style = "#a3cddb"
+style = "{{colors.secondary.default.hex}}"
 
 [golang]
 format = "[$symbol($version )]($style)"
 symbol = " "
-style = "#99cdee"
+style = "{{colors.tertiary.default.hex}}"
 
 [os]
 disabled = false
 format = ' [$symbol]($style) '
-style = "bold #00dce3"
+style = "bold {{colors.primary.default.hex}}"
 
 # 完整保留你 starship.toml 中的所有图标
 [os.symbols]

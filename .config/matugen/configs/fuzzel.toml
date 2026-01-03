@@ -1,0 +1,3 @@
+[templates.fuzzel]
+input_path = 'SHELL_DIR/matugen/templates/fuzzel.ini'
+output_path = '~/.config/fuzzel/colors.ini'
