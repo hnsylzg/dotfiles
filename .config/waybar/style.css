@@ -13,7 +13,7 @@
 
 * {
     border: none;
-    border-radius: 10px; /* M3 风格圆角略大 */
+    border-radius: 13px; /* M3 风格圆角略大 */
     font-family: "Roboto", "JetBrains Mono", monospace;
     font-size: 12px;
     font-weight: bold;
@@ -24,25 +24,31 @@ window#waybar {
 }
 
 /* 基础模块样式：使用 Surface Container 建立层级 */
-#network, #bluetooth, #temperature, #pulseaudio, #battery, 
-#backlight, #memory, #cpu, #disk, #clock, #keyboard-state, 
-#mpd, #language, #submap, #idle_inhibitor, #custom-clipboard, 
-#custom-playerctl, #custom-playerlabel, #custom-update, 
-#custom-powermenu, #tray, #custom-wallpaper, #custom-media, 
-#custom-wf-recorder, #custom-launcher, #custom-cava-internal {
+#network, #bluetooth, #pulseaudio, #battery, #backlight, 
+#clock, #keyboard-state, #mpd, #language, #submap, 
+#idle_inhibitor, #custom-clipboard, #custom-playerctl, 
+#custom-playerlabel, #custom-update, #custom-powermenu, 
+#tray, #custom-wallpaper, #custom-media, #custom-wf-recorder, 
+#custom-launcher, #custom-cava-internal, #hardware, #window  {
     margin-top: 6px;
     margin-left: 8px;
     margin-bottom: 0px;
     padding: 0 12px;
-    border-radius: 15px;
+    border-radius: 13px;
     /* 使用 M3 容器色，比纯黑背景略亮 */
     background: @surface_container; 
     /* 默认文字颜色使用次要表面色 */
     color: @on_surface_variant;
     transition: all 0.3s ease;
 }
-
 /* --- 核心角色映射 --- */
+#hardware {
+  padding: 0 6px;
+}
+#cpu, #temperature, #memory, #disk {
+    padding: 0 6px;
+}
+
 
 /* 1. 主角模块 (Primary): 使用最醒目的青色 */
 /* #clock { color: @primary; } */
@@ -73,7 +79,7 @@ window#waybar {
     margin-left: 8px;
     margin-bottom: 0px;
     padding: 0;       /* 增加左右内边距，让内部小胶囊不贴边 */
-    border-radius: 15px;    /* 大圆角形成大胶囊 */
+    border-radius: 13px;    /* 大圆角形成大胶囊 */
     /* transition: all 0.3s ease; */
     font-size: 8px;
 }
@@ -81,7 +87,7 @@ window#waybar {
     /* color: @surface_container_high; */
     background: @surface_bright;
     padding: 0 6px;
-    margin:8px 3px;
+    margin: 8px 3px;
     min-width: 8px;
     min-height: 14px;
     /* transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
@@ -143,12 +149,13 @@ window#waybar {
 
 /* 窗口标题 */
 #window { 
-    margin-top: 6px; 
-    padding: 0 10px; 
-    color: @on_surface; 
-    background: transparent; 
+    margin-left: 0px; 
+    /* padding: 0 10px;  */
+/*     background: transparent;  */
 }
-
+window#waybar.empty #window {
+    background-color: transparent;
+}
 #submap { 
 color: @on_tertiary_container; 
 background: transparent; 
