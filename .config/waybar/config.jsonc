@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  //"height": 30,
+  // "height": 36,
   "modules-left": [
     "custom/launcher",
     "cpu",
@@ -125,8 +125,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": " ",
-      "deactivated": " "
+      "activated": "",
+      "deactivated": ""
     },
     "tooltip": false
   },
