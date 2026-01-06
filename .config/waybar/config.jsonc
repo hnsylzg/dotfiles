@@ -209,7 +209,7 @@
   "custom/playerctl": {
     "format": "<span foreground='#bb9af7'>{icon}</span> {0}",
     "return-type": "json",
-    "max-length": 48,
+    "max-length": 20,
     "format-icons": {
       "Playing": "",
       //"Playing": "󰏦",
