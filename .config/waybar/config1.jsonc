@@ -82,6 +82,7 @@
     ]
   },
   "bluetooth": {
+    "format-no-controller": "",
     "format": " {status}",
     "format-disabled": "󰂲 {status}",
     "format-connected": " {device_alias}",
