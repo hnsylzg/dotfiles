@@ -1,0 +1,22 @@
+[Unit]
+Description=Waybar status bar
+Documentation=https://github.com/Alexays/Waybar
+# 关键：确保它属于图形会话的一部分
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+# 使用 simple 类型即可
+Type=simple
+# 加上全路径更规范
+ExecStart=/usr/bin/waybar
+# 允许通过 SIGHUP 重新加载配置
+ExecReload=kill -SIGUSR2 $MAINPID
+# 故障自动重启
+Restart=on-failure
+RestartSec=5
+
+[Install]
+# 只有在图形界面启动时才激活
+WantedBy=graphical-session.target
+
