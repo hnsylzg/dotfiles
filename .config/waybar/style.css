@@ -128,7 +128,7 @@ window#waybar {
 
 #custom-powermenu { 
     color: @error; 
-    background: @error_container; /* 醒目的红色退出键 */
+    background: alpha(@error_container,0.8); /* 醒目的红色退出键 */
     padding-left: 10px;
     padding-right: 14px; 
     margin-right: 8px; 
