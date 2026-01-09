@@ -36,7 +36,7 @@ window#waybar {
     padding: 0 12px;
     border-radius: 13px;
     /* 使用 M3 容器色，比纯黑背景略亮 */
-    background: @surface_container; 
+    background: alpha(@surface_container,0.8); 
     /* 默认文字颜色使用次要表面色 */
     color: @on_surface_variant;
     transition: all 0.3s ease;
@@ -74,7 +74,7 @@ window#waybar {
 
 /* 4. 工作区样式优化 (M3 药丸形状) */
 #workspaces {
-    background: @surface_container; /* 或者使用你喜欢的深色背景 */
+    background: alpha(@surface_container,0.8); /* 或者使用你喜欢的深色背景 */
     margin-top: 6px;
     margin-left: 8px;
     margin-bottom: 0px;
