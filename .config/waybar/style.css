@@ -149,15 +149,15 @@ window#waybar {
 #custom-playerctl.Stopped { color: transparent; }
 
 /* 窗口标题 */
-#window { 
-    margin-left: 0px; 
+/* #window {  */
 /*     background: transparent;  */
-}
+/* } */
 window#waybar.empty #window {
     background: transparent;
     padding: 0;
     margin: 0;
 }
+
 #submap { 
 color: @on_tertiary_container; 
 background: transparent; 

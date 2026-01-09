@@ -3,9 +3,10 @@
   "height": 36,
   "modules-left": [
     "custom/launcher",
-    "hyprland/workspaces",
     "niri/workspaces",
-    "hyprland/window"
+    "hyprland/workspaces",
+    "niri/window"
+    // "hyprland/window"
   ],
   "modules-center": [
     "custom/wf-recorder",
