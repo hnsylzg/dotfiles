@@ -1,0 +1,6 @@
+[Unit]
+Description=Hyprland Session
+# 关键：这行会让它自动激活那个受保护的 graphical-session.target
+BindsTo=graphical-session.target
+Wants=graphical-session-pre.target
+After=graphical-session-pre.target
