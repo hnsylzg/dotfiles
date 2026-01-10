@@ -8,7 +8,7 @@ After=graphical-session.target
 [Service]
 # 使用 simple 类型即可
 Type=simple
-; ExecStartPre=/usr/bin/sleep 0.8
+ExecStartPre=/usr/bin/sleep 1.5
 # 加上全路径更规范
 ExecStart=/usr/bin/waybar
 # 允许通过 SIGHUP 重新加载配置
