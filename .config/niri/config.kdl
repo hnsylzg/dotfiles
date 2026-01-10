@@ -284,7 +284,7 @@ spawn-at-startup "swww-daemon"
 // spawn-at-startup "waybar"
 spawn-sh-at-startup "wl-clip-persist --clipboard regular --all-mime-type-regex '(?i)^(?!image/x-inkscape-svg).+'"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
-spawn-sh-at-startup "until pgrep -x waybar >/dev/null; do sleep 0.3; done; sleep 2; wl-paste --watch pkill -RTMIN+9 waybar"
+spawn-sh-at-startup "wl-paste --watch pkill -RTMIN+9 waybar"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
