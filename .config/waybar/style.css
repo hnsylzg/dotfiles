@@ -24,10 +24,12 @@ window#waybar {
 }
 
 /* window>box { */
-/*     margin: 6px; */
+/*     margin-top: 6px; */
+/*     margin-left: 6px; */
+/*     margin-right: 6px; */
 /*     padding-bottom:6px; */
 /*     border-radius: 14px; */
-/*     background-color: rgba(30, 30, 46, 0.8); */
+/*     background-color: alpha(@surface_container,0.8); */
 /* } */
 
 /* 基础模块样式：使用 Surface Container 建立层级 */
