@@ -14,7 +14,6 @@
     font-family: monospace, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
-    min-height: 10px;
 }
 
 window#waybar {
