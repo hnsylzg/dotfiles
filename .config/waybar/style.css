@@ -14,7 +14,7 @@
 * {
     border: none;
      /* border-radius: 13px; */
-    font-family: "Roboto", "JetBrains Mono", monospace;
+    font-family: monospace;
     font-size: 12px;
     font-weight: bold;
 }
@@ -28,16 +28,16 @@ window#waybar {
 /*     margin-left: 6px; */
 /*     margin-right: 6px; */
 /*     padding-bottom:6px; */
-/*     border-radius: 14px; */
+/*     border-radius: 13px; */
 /*     background-color: alpha(@surface_container,0.8); */
 /* } */
 
 /* 基础模块样式：使用 Surface Container 建立层级 */
-#network, #bluetooth, #pulseaudio, #battery, #backlight, 
-#clock, #keyboard-state, #mpd, #language, #submap, 
-#idle_inhibitor, #custom-clipboard, #custom-playerctl, 
-#custom-playerlabel, #custom-update, #custom-powermenu, 
-#tray, #custom-wallpaper, #custom-media, #custom-wf-recorder, 
+#network, #bluetooth, #pulseaudio, #battery, #backlight,
+#clock, #keyboard-state, #mpd, #language, #submap,
+#idle_inhibitor, #custom-clipboard, #custom-playerctl,
+#custom-playerlabel, #custom-update, #custom-powermenu,
+#tray, #custom-wallpaper, #custom-media, #custom-wf-recorder,
 #custom-launcher, #custom-cava-internal, #hardware, #window  {
     margin-top: 6px;
     margin-left: 8px;
@@ -45,40 +45,39 @@ window#waybar {
     padding: 0 12px;
     border-radius: 13px;
     /* 使用 M3 容器色，比纯黑背景略亮 */
-    background: alpha(@surface_container,0.8); 
+    background: alpha(@surface_container,0.8);
     /* 默认文字颜色使用次要表面色 */
     color: @on_surface_variant;
     transition: all 0.3s ease;
 }
-/* --- 核心角色映射 --- */
+
+/* --- 硬件信息 --- */
 #hardware {
-  padding: 0 6px;
+    padding: 0 6px;
 }
 #cpu, #temperature, #memory, #disk {
     padding: 0 6px;
 }
 
-
 /* 1. 主角模块 (Primary): 使用最醒目的青色 */
 /* #clock { color: @primary; } */
 #custom-launcher { color: @on_primary_container; padding-left: 10px; padding-right: 14px; }
-#idle_inhibitor {padding-left: 9px; padding-right: 15px; }
-#custom-clipboard {padding-left: 11px; padding-right: 13px; }
+#idle_inhibitor { padding-left: 9px; padding-right: 15px; }
+#custom-clipboard { padding-left: 11px; padding-right: 13px; }
 /* 2. 状态模块 (Secondary/Tertiary): 柔和的色调 */
 /* #network, #bluetooth { color: @secondary; } */
 /* #memory, #cpu, #disk { color: @tertiary; } */
 /* #pulseaudio, #backlight { color: @primary_fixed_dim; } */
-
 /* 3. 电池状态 (使用 M3 标准错误/警告逻辑) */
 #battery { color: @secondary; }
 #battery.charging, #battery.plugged { color: @primary; }
-#battery.warning { color: @tertiary; } 
+#battery.warning { color: @tertiary; }
 #battery.critical { color: @error; }
-#battery.critical.discharging { 
-    animation-name: blink-critical; 
+#battery.critical.discharging {
+    animation-name: blink-critical;
     animation-duration: 2s; 
-    animation-iteration-count: infinite; 
-    animation-direction: alternate; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 /* 4. 工作区样式优化 (M3 药丸形状) */
@@ -87,8 +86,8 @@ window#waybar {
     margin-top: 6px;
     margin-left: 8px;
     margin-bottom: 0px;
-    padding: 0;       /* 增加左右内边距，让内部小胶囊不贴边 */
-    border-radius: 13px;    /* 大圆角形成大胶囊 */
+    padding: 0; /* 增加左右内边距，让内部小胶囊不贴边 */
+    border-radius: 13px;  /* 大圆角形成大胶囊 */
     /* transition: all 0.3s ease; */
     font-size: 8px;
 }
@@ -104,26 +103,24 @@ window#waybar {
     /* transition: all 0.3s ease; */
     /* transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1); */
 }
-
- #workspaces button:first-child {
+#workspaces button:first-child {
     /* 移除第一个按钮的左边距，让它直接贴在 #workspaces 的 padding 上 */
     margin-left: 8px;
-} 
+}
  #workspaces button:last-child {
     /* 移除最后一个按钮的右边距 */
     margin-right: 8px;
-}   
-#workspaces button.focused, #workspaces button.active { 
+}
+#workspaces button.focused, #workspaces button.active {
     /* 选中状态使用 Primary 容器，产生明亮的点击感 */
-    background: @primary_container; 
+    background: @primary_container;
     min-width: 16px;
 }
 #workspaces button.focused:hover, #workspaces button.active:hover {
     background:@inverse_primary;
 }
-
-#workspaces button:hover { 
-    background: @outline_variant; 
+#workspaces button:hover {
+    background: @outline_variant;
 }
 #workspaces button label {
     font-size: 0;       /* 字号设为 0，不占宽度 */
@@ -131,31 +128,6 @@ window#waybar {
     padding: 0;
     color: transparent; /* 完全透明 */
 }
-
-/* 5. 托盘与特殊插件 */
-#tray { color: @on_surface_variant; }
-
-#custom-powermenu { 
-    color: @error; 
-    background: alpha(@error_container,0.8); /* 醒目的红色退出键 */
-    padding-left: 10px;
-    padding-right: 14px; 
-    margin-right: 8px; 
-}
-
-/* 6. 音乐播放器 (MPD / Playerctl) */
-#mpd, #custom-playerctl, #custom-playerlabel {
-    background: transparent;
-    color: @secondary;
-    /* padding-bottom: 1px; */
-}
-
-#mpd.paused, #custom-playerctl.Paused { 
-    color: @outline; 
-    font-style: italic; 
-}
-
-#custom-playerctl.Stopped { color: transparent; }
 
 /* 窗口标题 */
 /* #window {  */
@@ -167,16 +139,42 @@ window#waybar.empty #window {
     margin: 0;
 }
 
-#submap { 
-color: @on_tertiary_container; 
-background: transparent; 
-font-style: italic; 
+/* 5. 托盘与特殊插件 */
+#tray { color: @on_surface_variant; }
+
+#custom-powermenu {
+    color: @error;
+    background: alpha(@error_container,0.8); /* 醒目的红色退出键 */
+    padding-left: 10px;
+    padding-right: 14px;
+    margin-right: 8px;
+}
+
+/* 6. 音乐播放器 (MPD / Playerctl) */
+#mpd, #custom-playerctl, #custom-playerlabel {
+    background: transparent;
+    color: @secondary;
+    /* padding-bottom: 1px; */
+}
+#mpd.paused, #custom-playerctl.Paused {
+    color: @outline;
+    font-style: italic;
+}
+#custom-playerctl.Stopped { color: transparent; }
+#custom-cava-internal { background: transparent; }
+
+#submap {
+    color: @on_tertiary_container;
+    background: transparent;
+    font-style: italic;
 }
 
 #custom-wf-recorder {
-  color: @error;
-  background: transparent;
-  font-size: 20px;
+    color: @error;
+    background: transparent;
+    font-size: 20px;
 }
 
-#custom-cava-internal { background: transparent; }
+tooltip label {
+    padding: 0;
+}
