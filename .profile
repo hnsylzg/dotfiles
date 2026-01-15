@@ -8,11 +8,11 @@ export EDITOR=nvim
 # export GTK_CSD=0
 
 # qt wayland
-export QT_QPA_PLATFORM="wayland"
+# export QT_QPA_PLATFORM="wayland"
 # export QT_QPA_PLATFORMTHEME=qt6ct
-export QT_QPA_PLATFORMTHEME=gtk3
-export QT_QPA_PLATFORMTHEME_QT6=gtk3
-export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
+# export QT_QPA_PLATFORMTHEME=gtk3
+# export QT_QPA_PLATFORMTHEME_QT6=gtk3
+# export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
 
 #Java XWayland blank screens fix
 #export _JAVA_AWT_WM_NONREPARENTING=1
@@ -25,7 +25,7 @@ export SHELL=/usr/bin/fish
 #export ZEIT_DB="$HOME/.config/zeit.db"
 
 # set ozone platform to wayland
-export ELECTRON_OZONE_PLATFORM_HINT=auto
+# export ELECTRON_OZONE_PLATFORM_HINT=auto
 
 # Disable hardware cursors. This might fix issues with
 # disappearing cursors
