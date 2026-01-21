@@ -28,10 +28,10 @@
     "custom/powermenu"
   ],
   "hyprland/window": {
-    "max-length": 20
+    "max-length": 30
   },
   "niri/window": {
-    "max-length": 20
+    "max-length": 30
   },
   "group/hardware": {
     "orientation": "inherit",
