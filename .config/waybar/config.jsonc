@@ -27,7 +27,7 @@
     "group/hardware",
     "custom/powermenu"
   ],
-"window": {
+  "window": {
     "max-length": 20
   },
   "group/hardware": {
