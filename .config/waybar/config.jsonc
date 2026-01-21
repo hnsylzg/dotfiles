@@ -27,7 +27,10 @@
     "group/hardware",
     "custom/powermenu"
   ],
-  "window": {
+  "hyprland/window": {
+    "max-length": 20
+  },
+  "niri/window": {
     "max-length": 20
   },
   "group/hardware": {
