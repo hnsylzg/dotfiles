@@ -10,11 +10,10 @@
 
 * {
     border: none;
-    border-radius: 10px;
+    border-radius: 13px;
     font-family: monospace, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
-    min-height: 30px;
 }
 
 window#waybar {
@@ -24,6 +23,15 @@ window#waybar {
 window#waybar.hidden {
     opacity: 0.2;
 }
+
+/* window>box { */
+/*     margin-top: 6px; */
+/*     margin-left: 6px; */
+/*     margin-right: 6px; */
+/*     padding-bottom:6px; */
+/*     border-radius: 15px; */
+/*     background-color: rgba(42, 49, 57, 0.8); */
+/* } */
 
 /* 基础合并样式 */
 #network, #bluetooth, #temperature, #pulseaudio, #battery, 
@@ -36,9 +44,9 @@ window#waybar.hidden {
     margin-left: 8px;
     margin-bottom: 0px;
     padding: 0 10px;
-    border-radius: 10px;
+    border-radius: 13px;
     /* background: #2a3139; */
-    /* background: rgba(42, 49, 57, 0.8); */
+    background: rgba(42, 49, 57, 0.8);
     transition: none;
 }
 
@@ -60,8 +68,8 @@ window#waybar.hidden {
 #clock { color: #e68da5; } /* 保留特殊的右边距 */
 #keyboard-state { color: #ac92c6; }
 #language { color: #ac92c6; min-width: 16px; }
-#idle_inhibitor { color: #ac92c6; }
-#custom-clipboard { color: #f2cdcd; }
+#idle_inhibitor { color: #ac92c6; padding-left: 8px; padding-right: 16px;}
+#custom-clipboard { color: #f2cdcd; padding-left: 11px; padding-right: 13px;}
 #custom-update { color: #c0caf5; }
 #custom-powermenu { color: #f28fad; margin-right: 8px; padding-right: 14px; } /* 保留特殊的左边距 */
 
@@ -92,7 +100,7 @@ window#waybar.hidden {
     color: #dba986;
     margin-top: 6px;
     margin-left: 8px;
-    border-radius: 10px;
+    border-radius: 13px;
 }
 #workspaces button.focused, #workspaces button.active { color: #0a4511; background: #83a3a0; }
 #workspaces button:hover { background: #fdbdbd; border: #e69e9e; padding: 0 5px; }
@@ -101,7 +109,7 @@ window#waybar.hidden {
     margin-top: 6px;
     margin-left: 12px;
     background: #161320;
-    border-radius: 10px;
+    border-radius: 13px;
 }
 #tags button { color: #B5E8E0; background: #b5e8e0; font-size: 16px; border-radius: 2px; }
 #tags button.occupied { color: #f28fad; background: transparent; font-size: 4px; }
@@ -110,7 +118,7 @@ window#waybar.hidden {
 /* 其他自定义模块 */
 #window { margin-top: 6px; padding: 0 10px; color: #7dda9f; background: transparent; }
 #tray { color: #aea4d0; }
-#custom-launcher { font-size: 20px; color: #96cdfb; background: transparent; }
+#custom-launcher { font-size: 20px; margin-left: 6px; color: #96cdfb; background: transparent; }
 #custom-power { font-size: 20px; margin-right: 8px; padding: 0 5px 0 10px; color: #161320; }
 #custom-wallpaper { color: #161320; }
 #custom-media { color: #161320; background: #f2cdcd; }
