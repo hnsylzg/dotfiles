@@ -68,7 +68,7 @@ window#waybar.hidden {
 #clock { color: #e68da5; } /* 保留特殊的右边距 */
 #keyboard-state { color: #ac92c6; }
 #language { color: #ac92c6; min-width: 16px; }
-#idle_inhibitor { color: #ac92c6; padding-left: 8px; padding-right: 16px;}
+#idle_inhibitor { color: #ac92c6; padding-left: 9px; padding-right: 15px;}
 #custom-clipboard { color: #f2cdcd; padding-left: 11px; padding-right: 13px;}
 #custom-update { color: #c0caf5; }
 #custom-powermenu { color: #f28fad; margin-right: 8px; padding-right: 14px; } /* 保留特殊的左边距 */
