@@ -1,3 +1,0 @@
-[templates.starship]
-input_path = 'SHELL_DIR/matugen/templates/starship-colors.toml'
-output_path = '~/.config/starship.toml'
