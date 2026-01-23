@@ -1,4 +1,0 @@
-[templates.waybar]
-input_path = 'SHELL_DIR/matugen/templates/colors.css'
-output_path = 'CONFIG_DIR/waybar/colors.css'
-post_hook = 'pkill -SIGUSR2 waybar'

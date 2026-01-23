@@ -1,3 +1,0 @@
-[templates.btop]
-input_path = 'SHELL_DIR/matugen/templates/btop.theme'
-output_path = 'CONFIG_DIR/btop/themes/matugen.theme'
