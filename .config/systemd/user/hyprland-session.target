@@ -1,5 +1,4 @@
 [Unit]
 Description=Hyprland Session Target
-# 关键：这行会让它自动激活那个受保护的 graphical-session.target
 Requires=graphical-session.target
 After=graphical-session.target
