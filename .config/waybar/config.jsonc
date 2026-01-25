@@ -202,10 +202,9 @@
   },
   "custom/launcher": {
     "format": "",
-    "on-click": "$HOME/.config/waybar/scripts/launcher.sh && pkill -RTMIN+8 waybar",
+    "on-click": "$HOME/.config/waybar/scripts/launcher.sh",
     "tooltip-format": "",
-    "tooltip": false,
-    "signal": 8
+    "tooltip": false
   },
   // "custom/launcher": {
   //     "format": "",
