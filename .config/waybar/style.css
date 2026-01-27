@@ -64,6 +64,7 @@ window#waybar {
 #custom-launcher { color: @on_primary_container; padding-left: 10px; padding-right: 14px; }
 #idle_inhibitor { padding-left: 9px; padding-right: 15px; }
 #custom-clipboard { padding-left: 11px; padding-right: 13px; }
+#custom-update { color: @on_primary_container }
 /* 2. 状态模块 (Secondary/Tertiary): 柔和的色调 */
 /* #network, #bluetooth { color: @secondary; } */
 /* #memory, #cpu, #disk { color: @tertiary; } */
@@ -93,7 +94,7 @@ window#waybar {
 }
 #workspaces button {
     /* color: @surface_container_high; */
-    background: @surface_bright;
+    background: @outline;
     padding: 0 6px;
     margin: 8px 3px;
     min-width: 8px;
@@ -113,14 +114,14 @@ window#waybar {
 }
 #workspaces button.focused, #workspaces button.active {
     /* 选中状态使用 Primary 容器，产生明亮的点击感 */
-    background: @primary_container;
+    background: @primary;
     min-width: 16px;
 }
 #workspaces button.focused:hover, #workspaces button.active:hover {
-    background:@inverse_primary;
+    background: @primary_fixed;
 }
 #workspaces button:hover {
-    background: @outline_variant;
+    background: @on_surface_variant;
 }
 #workspaces button label {
     font-size: 0;       /* 字号设为 0，不占宽度 */
@@ -143,8 +144,9 @@ window#waybar.empty #window {
 #tray { color: @on_surface_variant; }
 
 #custom-powermenu {
-    color: @error;
-    background: alpha(@error_container,0.8); /* 醒目的红色退出键 */
+    color: @on_primary_container ;
+    /* color: @error; */
+    /* background: alpha(@error_container,0.8); */
     padding-left: 10px;
     padding-right: 14px;
     margin-right: 8px;
