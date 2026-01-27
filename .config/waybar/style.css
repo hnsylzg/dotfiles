@@ -61,10 +61,10 @@ window#waybar {
 
 /* 1. 主角模块 (Primary): 使用最醒目的青色 */
 /* #clock { color: @primary; } */
-#custom-launcher { color: @on_primary_container; padding-left: 10px; padding-right: 14px; }
+#custom-launcher { color: @primary; padding-left: 10px; padding-right: 14px; }
 #idle_inhibitor { padding-left: 9px; padding-right: 15px; }
 #custom-clipboard { padding-left: 11px; padding-right: 13px; }
-#custom-update { color: @on_primary_container }
+#custom-update { color: @primary }
 /* 2. 状态模块 (Secondary/Tertiary): 柔和的色调 */
 /* #network, #bluetooth { color: @secondary; } */
 /* #memory, #cpu, #disk { color: @tertiary; } */
@@ -144,7 +144,7 @@ window#waybar.empty #window {
 #tray { color: @on_surface_variant; }
 
 #custom-powermenu {
-    color: @on_primary_container ;
+    color: @primary;
     /* color: @error; */
     /* background: alpha(@error_container,0.8); */
     padding-left: 10px;
