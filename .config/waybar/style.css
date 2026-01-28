@@ -46,7 +46,7 @@ window#waybar {
     padding: 0 11px;
     border-radius: 13px;
     /* 使用 M3 容器色，比纯黑背景略亮 */
-    background: alpha(@surface_container,0.8);
+    background: alpha(@surface_container, 0.8);
     /* 默认文字颜色使用次要表面色 */
     color: @on_surface;
     transition: all 0.3s ease;
