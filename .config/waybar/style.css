@@ -23,6 +23,7 @@ window#waybar {
     background: transparent;
 }
 
+/* 需要将config.jsonc总高度改height 34改为46 */
 /* window>box { */
 /*     margin-top: 6px; */
 /*     margin-left: 6px; */
@@ -34,21 +35,22 @@ window#waybar {
 
 /* 基础模块样式：使用 Surface Container 建立层级 */
 #network, #bluetooth, #pulseaudio, #battery, #backlight,
-#clock, #keyboard-state, #mpd, #language, #submap,
+#clock, #keyboard-state, #language, #submap,
 #idle_inhibitor, #custom-clipboard, #custom-playerctl,
 #custom-playerlabel, #custom-update, #custom-powermenu,
 #tray, #custom-wallpaper, #custom-media, #custom-wf-recorder,
 #custom-launcher, #custom-cava-internal, #hardware, #window  {
     margin-top: 6px;
-    margin-left: 8px;
+    margin-left: 6px;
     margin-bottom: 0px;
-    padding: 0 12px;
+    padding: 0 11px;
     border-radius: 13px;
     /* 使用 M3 容器色，比纯黑背景略亮 */
     background: alpha(@surface_container,0.8);
     /* 默认文字颜色使用次要表面色 */
-    color: @on_surface_variant;
+    color: @on-primary;
     transition: all 0.3s ease;
+    /* border: 1px solid @primary; */
 }
 
 /* --- 硬件信息 --- */
@@ -61,9 +63,9 @@ window#waybar {
 
 /* 1. 主角模块 (Primary): 使用最醒目的青色 */
 /* #clock { color: @primary; } */
-#custom-launcher { color: @primary; padding-left: 10px; padding-right: 14px; }
-#idle_inhibitor { padding-left: 9px; padding-right: 15px; }
-#custom-clipboard { padding-left: 11px; padding-right: 13px; }
+#custom-launcher { font-size: 14px; padding-left: 10px; padding-right: 12px; }
+#idle_inhibitor { padding-left: 7px; padding-right: 14px; }
+#custom-clipboard { padding-left: 10px; padding-right: 12px; }
 #custom-update { color: @primary }
 /* 2. 状态模块 (Secondary/Tertiary): 柔和的色调 */
 /* #network, #bluetooth { color: @secondary; } */
@@ -91,14 +93,15 @@ window#waybar {
     border-radius: 13px;  /* 大圆角形成大胶囊 */
     /* transition: all 0.3s ease; */
     font-size: 8px;
+    /* border: 1px solid @primary; */
 }
 #workspaces button {
     /* color: @surface_container_high; */
-    background: @outline;
+    background: @outline_variant;
     padding: 0 6px;
-    margin: 8px 3px;
+    margin: 7px 3px;
     min-width: 8px;
-    min-height: 14px;
+    min-height: 10px;
     /* transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     /* transition: all 0.3s ease; */
@@ -118,10 +121,10 @@ window#waybar {
     min-width: 16px;
 }
 #workspaces button.focused:hover, #workspaces button.active:hover {
-    background: @primary_fixed;
+    background: @primary;
 }
 #workspaces button:hover {
-    background: @on_surface_variant;
+    background: @outline;
 }
 #workspaces button label {
     font-size: 0;       /* 字号设为 0，不占宽度 */
@@ -141,28 +144,35 @@ window#waybar.empty #window {
 }
 
 /* 5. 托盘与特殊插件 */
-#tray { color: @on_surface_variant; }
+#tray { color: @on-primary; }
 
 #custom-powermenu {
     color: @primary;
     /* color: @error; */
     /* background: alpha(@error_container,0.8); */
-    padding-left: 10px;
-    padding-right: 14px;
-    margin-right: 8px;
+    padding-left: 9px;
+    padding-right: 13px;
+    margin-right: 6px;
 }
 
 /* 6. 音乐播放器 (MPD / Playerctl) */
-#mpd, #custom-playerctl, #custom-playerlabel {
+#custom-playerlabel {
     background: transparent;
-    color: @secondary;
-    /* padding-bottom: 1px; */
+    color: @primary;
 }
-#mpd.paused, #custom-playerctl.Paused {
+#custom-playerlabel {
+  margin-left: 0;
+  /* padding-left: 0; */
+  color: @on-primary;
+}
+#custom-playerctl, #custom-playerctl.Paused, #custom-playerctl.Stopped {
+  color: @primary;
+}
+#custom-playerlabel.Paused {
     color: @outline;
     font-style: italic;
 }
-#custom-playerctl.Stopped { color: transparent; }
+ #custom-playerlabel.Stopped { color: transparent; }
 #custom-cava-internal { background: transparent; }
 
 #submap {

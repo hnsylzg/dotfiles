@@ -1,13 +1,14 @@
 {
   "layer": "top",
-  "height": 36,
+  "height": 34,
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces",
     "hyprland/window",
     // "niri/window",
     // "niri/workspaces"
-    "custom/playerctl"
+    "custom/playerctl",
+    "custom/playerlabel"
   ],
   "modules-center": [
     "custom/wf-recorder",
@@ -201,7 +202,7 @@
     "signal": 9
   },
   "custom/launcher": {
-    "format": "",
+    "format": "󱗼",
     "on-click": "$HOME/.config/waybar/scripts/launcher.sh",
     "tooltip-format": "",
     "tooltip": false
@@ -212,7 +213,7 @@
   //     "on-click-right": "killall rofi"
   // },
   "custom/playerctl": {
-    "format": "<span foreground='#bb9af7'>{icon}</span> {0}",
+    "format": "{icon}",
     "return-type": "json",
     "max-length": 48,
     "format-icons": {
@@ -220,28 +221,28 @@
       //"Playing": "󰏦",
       // "Playing": "󰏥",
       "Paused": "",
-      //"Paused": "󰐍",
+      // "Paused": "󰐍",
       // "Paused": "󰐌"
-      "Stopped": ""
+      "Stopped": ""
     },
     "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     "on-click": "playerctl play-pause",
     "on-click-middle": "playerctl previous",
-    "on-click-right": "playerctl next",
-    "on-scroll-up": "playerctl position 10-",
-    "on-scroll-down": "playerctl position 10+"
+    "on-click-right": "playerctl next"
+    // "on-scroll-up": "playerctl position 10-",
+    // "on-scroll-down": "playerctl position 10+"
   },
-  // "custom/playerlabel": {
-  //   "format": "{}",
-  //   "return-type": "json",
-  //   "max-length": 48,
-  //   "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-  //   "on-click": "playerctl play-pause",
-  //   "on-click-middle": "playerctl previous",
-  //   "on-click-right": "playerctl next",
-  //   "on-scroll-up": "playerctl position 10-",
-  //   "on-scroll-down": "playerctl position 10+"
-  // },
+  "custom/playerlabel": {
+    "format": "{}",
+    "return-type": "json",
+    "max-length": 48,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    // "on-click": "playerctl play-pause",
+    // "on-click-middle": "playerctl previous",
+    // "on-click-right": "playerctl next",
+    "on-scroll-up": "playerctl position 5-",
+    "on-scroll-down": "playerctl position 5+"
+  },
   "custom/update": {
     "format": " {}",
     "interval": 3600,
