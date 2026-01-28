@@ -14,7 +14,7 @@ listview {
 window {
   width : 25em;
   // border-color: @outline-variant;
-  border-color: @outline;
+  border-color: @primary;
   border: 2;
   border-radius: 10px;
 }
