@@ -27,8 +27,8 @@ configuration {
 window {
     background-color: @surface-container;
     text-color:       @on-surface;
-    border:           1;
-    border-color:     @outline;
+    border:           2;
+    border-color:     @primary;
     border-radius:    10px;
     padding:          10;
     width:            120px;

@@ -23,7 +23,7 @@ listview {
 window {
   location: north west;
   width: 15em;
-  border: 1;
+  border: 2;
   x-offset: 6;
   y-offset: 6;
 }
