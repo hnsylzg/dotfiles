@@ -48,7 +48,7 @@ window#waybar {
     /* 使用 M3 容器色，比纯黑背景略亮 */
     background: alpha(@surface_container,0.8);
     /* 默认文字颜色使用次要表面色 */
-    color: @on-primary;
+    color: @on_surface;
     transition: all 0.3s ease;
     /* border: 1px solid @primary; */
 }
@@ -85,7 +85,7 @@ window#waybar {
 
 /* 4. 工作区样式优化 (M3 药丸形状) */
 #workspaces {
-    background: alpha(@surface_container,0.8); /* 或者使用你喜欢的深色背景 */
+    background: alpha(@surface_container, 0.8); /* 或者使用你喜欢的深色背景 */
     margin-top: 6px;
     margin-left: 8px;
     margin-bottom: 0px;
@@ -97,7 +97,7 @@ window#waybar {
 }
 #workspaces button {
     /* color: @surface_container_high; */
-    background: @outline_variant;
+    background: alpha(@on_surface, 0.3);
     padding: 0 6px;
     margin: 7px 3px;
     min-width: 8px;
@@ -124,7 +124,7 @@ window#waybar {
     background: @primary;
 }
 #workspaces button:hover {
-    background: @outline;
+    background: alpha(@on_surface, 0.7);
 }
 #workspaces button label {
     font-size: 0;       /* 字号设为 0，不占宽度 */
@@ -144,7 +144,7 @@ window#waybar.empty #window {
 }
 
 /* 5. 托盘与特殊插件 */
-#tray { color: @on-primary; }
+#tray { color: @on_surface; }
 
 #custom-powermenu {
     color: @primary;
@@ -163,7 +163,7 @@ window#waybar.empty #window {
 #custom-playerlabel {
   margin-left: 0;
   /* padding-left: 0; */
-  color: @on-primary;
+  color: @on_surface;
 }
 #custom-playerctl, #custom-playerctl.Paused, #custom-playerctl.Stopped {
   color: @primary;
