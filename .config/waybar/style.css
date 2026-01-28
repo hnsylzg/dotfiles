@@ -87,7 +87,7 @@ window#waybar {
 #workspaces {
     background: alpha(@surface_container, 0.8); /* 或者使用你喜欢的深色背景 */
     margin-top: 6px;
-    margin-left: 8px;
+    margin-left: 6px;
     margin-bottom: 0px;
     padding: 0; /* 增加左右内边距，让内部小胶囊不贴边 */
     border-radius: 13px;  /* 大圆角形成大胶囊 */
