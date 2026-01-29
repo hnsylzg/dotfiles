@@ -34,7 +34,7 @@ window#waybar {
 
 /* 基础模块样式 */
 #network, #bluetooth, #pulseaudio, #battery, #backlight,
-#clock, #keyboard-state, #language, #submap,
+#clock, #keyboard-state, #language, #submap, #player,
 #idle_inhibitor, #custom-clipboard, #custom-playerctl,
 #custom-playerlabel, #custom-update, #custom-powermenu,
 #tray, #custom-wallpaper, #custom-media, #custom-wf-recorder,
@@ -153,13 +153,26 @@ window#waybar.empty #window {
 }
 
 /* 6. 音乐播放器 (MPD / Playerctl) */
-#custom-playerctl, #custom-playerctl.Paused, #custom-playerctl.Stopped {
+#player {
+  padding: 0 2px;
+  border-radius: 14px;
+}
+#custom-playerctl {
+  background: @primary;
+  color: @on_primary;
+  margin: 2px 0;
+  padding: 0;
+  min-width: 25px;
+  font-size: 14px;
+}
+#custom-playerctl.Paused, #custom-playerctl.Stopped {
+  background: alpha(@primary, 0.1);
   color: @primary;
 }
 #custom-playerlabel {
     background: transparent;
+    margin: 4px 0;
     color: @on_surface;
-    margin-left: 0;
 }
 #custom-playerlabel.Paused {
     color: @outline;
