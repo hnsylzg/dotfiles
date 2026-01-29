@@ -33,7 +33,7 @@ window#waybar {
 /*     border-radius: 13px; */
 /* } */
 
-/* 基础模块样式：使用 Surface Container 建立层级 */
+/* 基础模块样式 */
 #network, #bluetooth, #pulseaudio, #battery, #backlight,
 #clock, #keyboard-state, #language, #submap,
 #idle_inhibitor, #custom-clipboard, #custom-playerctl,
@@ -46,7 +46,7 @@ window#waybar {
     margin-bottom: 0px;
     margin-left: 6px;
     padding: 0 11px;
-    border-radius: 13px;
+    border-radius: 12px;
     transition: all 0.3s ease;
     /* border: 1px solid @primary; */
 }
@@ -59,17 +59,17 @@ window#waybar {
     padding: 0 6px;
 }
 
-/* 1. 主角模块 (Primary): 使用最醒目的青色 */
+/* 1. 主角模块 */
 /* #clock { color: @primary; } */
 #custom-launcher { padding-left: 10px; padding-right: 12px; font-size: 14px; }
 #custom-update { color: @primary }
 #custom-clipboard { padding-left: 10px; padding-right: 12px; }
 #idle_inhibitor { padding-left: 8px; padding-right: 14px; }
-/* 2. 状态模块 (Secondary/Tertiary): 柔和的色调 */
+/* 2. 状态模块 */
 /* #network, #bluetooth { color: @secondary; } */
 /* #memory, #cpu, #disk { color: @tertiary; } */
 /* #pulseaudio, #backlight { color: @primary_fixed_dim; } */
-/* 3. 电池状态 (使用 M3 标准错误/警告逻辑) */
+/* 3. 电池状态 */
 #battery { color: @secondary; }
 #battery.charging, #battery.plugged { color: @primary; }
 #battery.warning { color: @tertiary; }
@@ -81,14 +81,14 @@ window#waybar {
     animation-direction: alternate;
 }
 
-/* 4. 工作区样式优化 (M3 药丸形状) */
+/* 4. 工作区样式 */
 #workspaces {
-    background: alpha(@surface_container, 0.8); /* 或者使用你喜欢的深色背景 */
+    background: alpha(@surface_container, 0.8); /* 深色背景 */
     margin-top: 6px;
     margin-bottom: 0px;
     margin-left: 6px;
     padding: 0; /* 增加左右内边距，让内部小胶囊不贴边 */
-    border-radius: 13px;  /* 大圆角形成大胶囊 */
+    border-radius: 12px; 
     /* transition: all 0.3s ease; */
     font-size: 8px;
     /* border: 1px solid @primary; */
