@@ -13,7 +13,7 @@
   "modules-center": [
     "custom/wf-recorder",
     "hyprland/submap",
-    "clock"    
+    "clock"
   ],
   "modules-right": [
     "custom/update",
@@ -117,7 +117,6 @@
   "cpu": {
     "format": "󰍛 {usage}%",
     "interval": 2,
-    // "on-click": "xdg-terminal-exec btop",
     "on-click": "$HOME/.config/waybar/scripts/once.sh kitty --class floating_shell btop",
     "tooltip": true
   },
@@ -215,7 +214,6 @@
   "custom/playerctl": {
     "format": "{icon}",
     "return-type": "json",
-    "max-length": 48,
     "format-icons": {
       "Playing": "",
       //"Playing": "󰏦",
