@@ -59,7 +59,7 @@ window#waybar {
 
 /* 1. 主角模块 */
 /* #clock { color: @primary; } */
-#custom-launcher { padding-left: 10px; padding-right: 11px; font-size: 13px; }
+#custom-launcher { padding-left: 10px; padding-right: 11px; font-size: 14px; }
 #custom-update { color: @primary }
 #custom-clipboard { padding-left: 10px; padding-right: 11px; }
 #idle_inhibitor { padding-left: 9px; padding-right: 12px; }
@@ -175,7 +175,7 @@ window#waybar.empty #window {
 #custom-playerlabel {
     background: transparent;
     color: @on_surface;
-    margin: 4px 0 5px 0;
+    margin: 5px 0;
 }
 #custom-playerlabel.Paused {
     color: @outline;
