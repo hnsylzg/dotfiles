@@ -7,8 +7,9 @@
     "hyprland/window",
     // "niri/window",
     // "niri/workspaces"
-    "custom/playerctl",
-    "custom/playerlabel"
+    // "custom/playerctl",
+    // "custom/playerlabel"
+    "group/player"
   ],
   "modules-center": [
     "custom/wf-recorder",
@@ -29,9 +30,11 @@
     "custom/powermenu"
   ],
   "hyprland/window": {
+    // "icon": true,
     "max-length": 30
   },
   "niri/window": {
+    // "icon": true,
     "max-length": 30
   },
   "group/hardware": {
@@ -211,6 +214,13 @@
   //     "on-click": "rofi -show combi -combi-modi 'drun,run' -show-icons",
   //     "on-click-right": "killall rofi"
   // },
+  "group/player": {
+    "orientation": "inherit",
+    "modules": [
+      "custom/playerctl",
+      "custom/playerlabel"
+    ]
+  },
   "custom/playerctl": {
     "format": "{icon}",
     "return-type": "json",
