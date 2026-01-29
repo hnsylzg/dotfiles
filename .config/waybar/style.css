@@ -22,7 +22,7 @@ window#waybar {
     background: transparent;
 }
 
-/* 取消注释加上wayabr背景,需要将config.jsonc总高度改height 34改为46 */
+/* 取消注释加上wayabr背景,需要将config.jsonc总高度改height 33改为45 */
 /* window>box { */
 /*     background-color: alpha(@surface_container,0.8); */
 /*     margin-top: 6px; */
@@ -60,10 +60,10 @@ window#waybar {
 
 /* 1. 主角模块 */
 /* #clock { color: @primary; } */
-#custom-launcher { padding-left: 10px; padding-right: 12px; font-size: 14px; }
+#custom-launcher { padding-left: 10px; padding-right: 11px; font-size: 13px; }
 #custom-update { color: @primary }
-#custom-clipboard { padding-left: 10px; padding-right: 12px; }
-#idle_inhibitor { padding-left: 8px; padding-right: 14px; }
+#custom-clipboard { padding-left: 10px; padding-right: 11px; }
+#idle_inhibitor { padding-left: 8px; padding-right: 13px; }
 /* 2. 状态模块 */
 /* #network, #bluetooth { color: @secondary; } */
 /* #memory, #cpu, #disk { color: @tertiary; } */
@@ -89,7 +89,7 @@ window#waybar {
     padding: 0; /* 增加左右内边距，让内部小胶囊不贴边 */
     border-radius: 12px; 
     /* transition: all 0.3s ease; */
-    font-size: 8px;
+    /* font-size: 8px; */
     /* border: 1px solid @primary; */
 }
 #workspaces button {
@@ -98,7 +98,7 @@ window#waybar {
     margin: 7px 3px;
     padding: 0 6px;
     min-width: 8px;
-    min-height: 10px;
+    min-height: 8px;
     /* transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     /* transition: all 0.3s ease; */
@@ -149,7 +149,7 @@ window#waybar.empty #window {
     color: @primary;
     margin-right: 6px;
     padding-left: 9px;
-    padding-right: 13px;
+    padding-right: 12px;
 }
 
 /* 6. 音乐播放器 (MPD / Playerctl) */
