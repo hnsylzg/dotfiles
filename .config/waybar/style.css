@@ -175,7 +175,7 @@ window#waybar.empty #window {
 #custom-playerlabel {
     background: transparent;
     color: @on_surface;
-    margin: 5px 0;
+    margin: 4px 0 5px 0;
 }
 #custom-playerlabel.Paused {
     color: @outline;
