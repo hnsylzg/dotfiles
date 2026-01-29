@@ -153,17 +153,13 @@ window#waybar.empty #window {
 }
 
 /* 6. 音乐播放器 (MPD / Playerctl) */
-#custom-playerlabel {
-    background: transparent;
-    color: @primary;
-}
-#custom-playerlabel {
-  color: @on_surface;
-  margin-left: 0;
-  /* padding-left: 0; */
-}
 #custom-playerctl, #custom-playerctl.Paused, #custom-playerctl.Stopped {
   color: @primary;
+}
+#custom-playerlabel {
+    background: transparent;
+    color: @on_surface;
+    margin-left: 0;
 }
 #custom-playerlabel.Paused {
     color: @outline;
