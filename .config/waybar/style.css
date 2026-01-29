@@ -22,7 +22,7 @@ window#waybar {
     background: transparent;
 }
 
-/* 取消注释加上wayabr背景,需要将config.jsonc总高度改height 33改为45 */
+/* 取消注释加上wayabr背景,需要将config.jsonc总高度改height 34改为46 */
 /* window>box { */
 /*     background-color: alpha(@surface_container,0.8); */
 /*     margin-top: 6px; */
@@ -63,7 +63,7 @@ window#waybar {
 #custom-launcher { padding-left: 10px; padding-right: 11px; font-size: 13px; }
 #custom-update { color: @primary }
 #custom-clipboard { padding-left: 10px; padding-right: 11px; }
-#idle_inhibitor { padding-left: 8px; padding-right: 13px; }
+#idle_inhibitor { padding-left: 9px; padding-right: 12px; }
 /* 2. 状态模块 */
 /* #network, #bluetooth { color: @secondary; } */
 /* #memory, #cpu, #disk { color: @tertiary; } */

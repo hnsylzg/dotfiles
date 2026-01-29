@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "height": 33,
+  "height": 34,
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces",
@@ -128,8 +128,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": ""
+      "activated": "󰅶",
+      "deactivated": "󰾪"
     },
     "tooltip": false
   },
