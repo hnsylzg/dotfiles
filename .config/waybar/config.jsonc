@@ -141,15 +141,22 @@
     "format": "󰘚 {used:0.1f}G",
     "on-click": "$HOME/.config/waybar/scripts/once.sh kitty --class floating_shell btop"
   },
-  "network": {
-    // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "󰖩 {essid} ({signalStrength}%)",
-    "format-ethernet": "󰈀 {ifname}",
-    "tooltip-format": "{ifname} via {gwaddr}",
-    "format-linked": " {ifname} (No IP)",
-    "format-disconnected": "⚠ Disconnected",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}"
-  },
+  // "network": {
+  //   // "interface": "wlp2*", // (Optional) To force the use of this interface
+  //   "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+  //   "format-ethernet": "󰈀 {ifname}",
+  //   "tooltip-format": "{ifname} via {gwaddr}",
+  //   "format-linked": " {ifname} (No IP)",
+  //   "format-disconnected": "⚠ Disconnected",
+  //   "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  // },
+  // "network": {
+  //   "format": "⚠  Disabled",
+  //   "format-wifi": "  {essid}",
+  //   "format-ethernet": "  Wired",
+  //   "format-disconnected": "⚠  Disconnected",
+  //   "on-click": "nm-connection-editor"
+  // },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{icon} {volume}% {format_source}",
@@ -189,8 +196,8 @@
     "on-click": "$HOME/.config/waybar/scripts/once.sh kitty --class floating_shell btop"
   },
   "tray": {
-    "icon-size": 20,
-    "spacing": 10
+    "icon-size": 18,
+    "spacing": 6
   },
   "custom/clipboard": {
     "format": "󰨸",
@@ -231,12 +238,12 @@
       "Paused": "",
       // "Paused": "󰐍",
       // "Paused": "󰐌"
-      "Stopped": ""
+      "Stopped": "󰎇"
     },
     "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     "on-click": "playerctl play-pause",
-    "on-click-middle": "playerctl previous",
-    "on-click-right": "playerctl next"
+    // "on-click-middle": "playerctl previous",
+    "on-click-right": "playerctl stop"
     // "on-scroll-up": "playerctl position 10-",
     // "on-scroll-down": "playerctl position 10+"
   },
@@ -248,8 +255,8 @@
     // "on-click": "playerctl play-pause",
     // "on-click-middle": "playerctl previous",
     // "on-click-right": "playerctl next",
-    "on-scroll-up": "playerctl position 5-",
-    "on-scroll-down": "playerctl position 5+"
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next"
   },
   "custom/update": {
     "format": " {}",

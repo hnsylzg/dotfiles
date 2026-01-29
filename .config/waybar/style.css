@@ -169,6 +169,10 @@ window#waybar.empty #window {
   background: alpha(@primary, 0.1);
   color: @primary;
 }
+#custom-playerctl.Stopped {
+  background: transparent;
+  color: @on_surface;
+}
 #custom-playerlabel {
     background: transparent;
     margin: 4px 0;
@@ -178,7 +182,13 @@ window#waybar.empty #window {
     color: @outline;
     font-style: italic;
 }
-#custom-playerlabel.Stopped { color: transparent; }
+#custom-playerlabel.Stopped { 
+  color: transparent;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  font-size: 0;
+}
 #custom-cava-internal { background: transparent; }
 
 #submap {
