@@ -174,8 +174,8 @@ window#waybar.empty #window {
 }
 #custom-playerlabel {
     background: transparent;
-    margin: 4px 0;
     color: @on_surface;
+    margin: 5px 0;
 }
 #custom-playerlabel.Paused {
     color: @outline;
@@ -204,9 +204,5 @@ window#waybar.empty #window {
 
 tooltip label {
     padding: 0;
-}
-
-#clock, #pulseaudio, #hardware  {
-  padding-top: 1px;
 }
 
