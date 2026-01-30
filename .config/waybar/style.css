@@ -22,7 +22,7 @@ window#waybar {
     background: transparent;
 }
 
-/* 取消注释加上wayabr背景,需要将config.jsonc总高度改height 34改为46 */
+/* 取消注释加上wayabr背景,需要将config.jsonc总高度改height 35改为47 */
 /* window>box { */
 /*     background-color: alpha(@surface_container,0.8); */
 /*     margin-top: 6px; */
