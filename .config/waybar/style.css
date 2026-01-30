@@ -61,7 +61,7 @@ window#waybar {
 /* #clock { color: @primary; } */
 #custom-launcher { font-size: 13px; }
 #custom-update { color: @primary }
-#custom-clipboard { font-size: 13px; }
+#custom-clipboard { padding-bottom: 1px; font-size: 13px; }
 /* #idle_inhibitor { padding-left: 9px; padding-right: 11px; } */
 /* 2. 状态模块 */
 /* #network, #bluetooth { color: @secondary; } */
