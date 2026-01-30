@@ -12,7 +12,7 @@
 }
 
 * {
-    font-family: "Noto Sans";
+    font-family: "NotoSans Nerd Font";
     font-size: 12px;
     font-weight: 500;
     border: none;
@@ -59,10 +59,10 @@ window#waybar {
 
 /* 1. 主角模块 */
 /* #clock { color: @primary; } */
-#custom-launcher { font-size: 13px; }
+#custom-launcher { font-family: "Symbols Nerd Font"; font-size: 13px; }
 #custom-update { color: @primary }
-#custom-clipboard { padding-left: 11px; }
-/* #idle_inhibitor { padding-left: 9px; padding-right: 11px; } */
+#custom-clipboard { padding-left: 11px; font-family: "Symbols Nerd Font"; }
+#idle_inhibitor { font-family: "Symbols Nerd Font"; }
 /* 2. 状态模块 */
 /* #network, #bluetooth { color: @secondary; } */
 /* #memory, #cpu, #disk { color: @tertiary; } */
@@ -147,6 +147,7 @@ window#waybar.empty #window {
     /* color: @error; */
     color: @primary;
     margin-right: 6px;
+    font-family: "Symbols Nerd Font";
 }
 
 /* 6. 音乐播放器 (MPD / Playerctl) */
@@ -160,6 +161,7 @@ window#waybar.empty #window {
   margin: 2px 0;
   padding: 0;
   min-width: 25px;
+  font-family: "Symbols Nerd Font";
   font-size: 14px;
 }
 #custom-playerctl.Paused, #custom-playerctl.Stopped {
