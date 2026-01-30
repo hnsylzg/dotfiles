@@ -1,6 +1,7 @@
 {
   "layer": "top",
-  "height": 34,
+  "height": 35,
+
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces",
