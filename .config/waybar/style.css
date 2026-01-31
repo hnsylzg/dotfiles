@@ -94,7 +94,7 @@ window#waybar {
 #workspaces button {
     background: alpha(@on_surface, 0.3);
     /* color: @surface_container_high; */
-    margin: 6px 3px; /* 按钮高度,随height=33改6,height=35改7 */
+    margin: 7px 3px; /* 按钮高度,随height=33改6,height=35改7 */
     padding: 0 6px;
     min-width: 8px;
     min-height: 8px;

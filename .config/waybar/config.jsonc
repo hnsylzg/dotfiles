@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "height": 33,
+  "height": 35,
 
   "modules-left": [
     "custom/launcher",
@@ -97,8 +97,8 @@
   },
   "bluetooth": {
     "format-no-controller": "",
-    "format": " {status}",
-    "format-disabled": "󰂲 {status}",
+    "format": "",
+    "format-disabled": "󰂲",
     "format-connected": "󰂱 {device_alias}",
     "format-connected-battery": "󰂱 {device_alias} {device_battery_percentage}%",
     // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
