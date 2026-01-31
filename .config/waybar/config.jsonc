@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "height": 35,
+  "height": 33,
 
   "modules-left": [
     "custom/launcher",

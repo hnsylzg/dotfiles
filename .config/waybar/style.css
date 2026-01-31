@@ -44,7 +44,7 @@ window#waybar {
     margin-top: 6px;
     margin-bottom: 0px;
     margin-left: 6px;
-    padding: 3px 10px;
+    padding: 2px 10px;
     border-radius: 12px;
     transition: all 0.3s ease;
     /* border: 1px solid @primary; */
@@ -94,7 +94,7 @@ window#waybar {
 #workspaces button {
     background: alpha(@on_surface, 0.3);
     /* color: @surface_container_high; */
-    margin: 7px 3px;
+    margin: 6px 3px; /* 按钮高度,随height=33改6,height=35改7 */
     padding: 0 6px;
     min-width: 8px;
     min-height: 8px;
