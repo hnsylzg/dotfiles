@@ -4,7 +4,7 @@
   background : @surface-container;
   lightfg : @primary;
   foreground : @on-surface;
-  font : "Roboto 11";
+  font : "Inter 11";
 }
 listview {
   lines : 10;
