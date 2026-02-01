@@ -38,7 +38,7 @@
     background: #00000000;
     lightfg:  #f5c2e7;
     foreground: #eeeeee;
-    font: "Roboto 11";
+    font: "NotoSans Nerd Font 11";
 }
 element {
     padding: 1px ;

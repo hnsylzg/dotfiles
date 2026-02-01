@@ -3,7 +3,7 @@
   background : #141a1b;
   lightfg : #f5c2e7;
   foreground : #eeeeee;
-  font : "Roboto 11";
+  font : "NotoSans Nerd Font 11";
 }
 listview {
   lines : 10;
