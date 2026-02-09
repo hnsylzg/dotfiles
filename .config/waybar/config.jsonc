@@ -4,10 +4,10 @@
 
   "modules-left": [
     "custom/launcher",
-    "hyprland/workspaces",
-    "hyprland/window",
-    // "niri/window",
-    // "niri/workspaces"
+    // "hyprland/workspaces",
+    // "hyprland/window",
+    "niri/workspaces",
+    "niri/window",
     // "custom/playerctl",
     // "custom/playerlabel"
     "group/player"
