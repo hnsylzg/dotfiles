@@ -191,8 +191,9 @@ window#waybar.empty #window {
 #custom-cava-internal { background: transparent; }
 
 #submap {
-    background: transparent;
-    color: @on_tertiary_container;
+    /* background: transparent; */
+    /* color: @on_tertiary_container; */
+    color: @primary;
     font-style: italic;
 }
 
