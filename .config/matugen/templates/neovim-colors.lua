@@ -35,6 +35,20 @@ local function deepGet(t, k)
 	return t
 end
 
+local obj = vim.system({ "gsettings", "get", "org.gnome.desktop.interface", "color-scheme" }, { text = true }):wait()
+local mode = obj.stdout
+
+if mode ~= nil then
+	-- GNOME 常见的两种深色模式返回值是 'prefer-dark' 或 'prefer-light' (某些版本)
+	-- 默认通常是 'default'，一般对应浅色
+	if mode:match("dark") then
+		vim.o.background = "dark"
+	else
+		-- 只要不包含 dark，通常视为 light 模式
+		vim.o.background = "light"
+	end
+end
+
 local current_file_path = debug.getinfo(1, "S").source:sub(2)
 local theme_base = deepGet(settings, { "matugenTemplateNeovimSettings", vim.o.background, "baseTheme" })
 	or ("github_" .. vim.o.background)
@@ -74,7 +88,9 @@ end
 if not base46.theme_tables[theme_name] or base46.theme_tables[theme_name].type ~= vim.o.background then
 	local builtin = vim.deepcopy(assert(base46.get_builtin_theme(theme_base)))
 	local harmonized = base46.theme_harmonize(builtin, "{{colors.source_color.default.hex}}", harmony)
-	harmonized = base46.theme_set_bg(harmonized, "{{colors.background.default.hex}}")
+	if settings.matugenTemplateNeovimSetBackground ~= false then
+		harmonized = base46.theme_set_bg(harmonized, "{{colors.background.default.hex}}")
+	end
 
 	base46.theme_tables[theme_name] = harmonized
 end
