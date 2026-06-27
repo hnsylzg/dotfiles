@@ -35,17 +35,12 @@ local function deepGet(t, k)
 	return t
 end
 
-local obj = vim.system({ "gsettings", "get", "org.gnome.desktop.interface", "color-scheme" }, { text = true }):wait()
-local mode = obj.stdout
-
+local mode = vim.system({ "dms", "ipc", "call", "theme", "getMode" }, { text = true }):wait().stdout
 if mode ~= nil then
-	-- GNOME 常见的两种深色模式返回值是 'prefer-dark' 或 'prefer-light' (某些版本)
-	-- 默认通常是 'default'，一般对应浅色
-	if mode:match("dark") then
-		vim.o.background = "dark"
-	else
-		-- 只要不包含 dark，通常视为 light 模式
+	if mode:match("light") then
 		vim.o.background = "light"
+	elseif mode:match("dark") then
+		vim.o.background = "dark"
 	end
 end
 
