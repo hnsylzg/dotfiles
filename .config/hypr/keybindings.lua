@@ -53,28 +53,28 @@ hl.define_submap("󰄄 Pick (p) Output (o)+ Shift for ", function()
 	hl.bind(
 		"P",
 		hl.dsp.exec_cmd(
-			"grimblast save area-| swappy -f- && [[ $(wl-paste -l)==image/png ]] && notify-send Screenshot copied to clipboard"
+			'grimblast save area - | swappy -f - && [[ $(wl-paste -l)=="image/png" ]] && notify-send Screenshot copied to clipboard'
 		)
 	)
 	hl.bind("P", hl.dsp.submap("reset"))
 	hl.bind(
 		"O",
 		hl.dsp.exec_cmd(
-			"grimblast save output-| swappy -f- && [[ $(wl-paste -l)==image/png ]] && notify-send Screenshot copied to clipboard"
+			'grimblast save output - | swappy -f - && [[ $(wl-paste -l)=="image/png" ]] && notify-send Screenshot copied to clipboard'
 		)
 	)
 	hl.bind("O", hl.dsp.submap("reset"))
 	hl.bind(
 		"SHIFT" .. " + " .. "P",
 		hl.dsp.exec_cmd(
-			"bash -c 'grimblast save area-| curl -s -F file=@-;filename=.png https://x0.at/| tee >(wl-copy) >(xargs notify-send)'"
+			"bash -c 'grimblast save area - | curl -s -F \"file=@-;filename=.png\" https://x0.at/| tee >(wl-copy) >(xargs notify-send)'"
 		)
 	)
 	hl.bind("SHIFT" .. " + " .. "P", hl.dsp.submap("reset"))
 	hl.bind(
 		"SHIFT" .. " + " .. "O",
 		hl.dsp.exec_cmd(
-			"bash -c 'grimblast save output-| curl -s -F file=@-;filename=.png https://x0.at/| tee >(wl-copy) >(xargs notify-send)'"
+			"bash -c 'grimblast save output - | curl -s -F \"file=@-;filename=.png\" https://x0.at/| tee >(wl-copy) >(xargs notify-send)'"
 		)
 	)
 	hl.bind("SHIFT" .. " + " .. "O", hl.dsp.submap("reset"))
