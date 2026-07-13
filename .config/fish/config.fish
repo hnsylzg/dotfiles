@@ -7,9 +7,6 @@ if status is-interactive
     #     source ~/.fish_profile
     # end
 
-    # Add ~/.local/bin to PATH
-    fish_add_path ~/.local/bin
-
     # Enable the fish greeting
     set -g fish_greeting ""
 

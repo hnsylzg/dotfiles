@@ -15,5 +15,4 @@ alias la='ls -la'
 # BASE16_SHELL="/usr/share/zsh/scripts/base16-shell/base16-twilight.dark.sh"
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-. "$HOME/.local/bin/env"
 export PYCHARM_VM_OPTIONS="/home/lzg/.config/jetbra/vmoptions/pycharm.vmoptions"
